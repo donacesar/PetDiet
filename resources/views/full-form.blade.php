@@ -1,4 +1,4 @@
-@extends('layouts.main-layout')
+@extends('layouts.main-layout', ['title' => env('APP_NAME'). ' - рацион'])
 @section('content')
 
     <!--allrecords-->
@@ -855,7 +855,7 @@
                             </style>
                         </div>
                         <div class="t678__form-bottom-text t-text t-text_xs" field="text">Нажимая кнопку "отправить" Вы
-                            даёте согласие на обработку, хранение и удаление предоставляемых персональных данных.
+                            даёте согласие на обработку персональных данных.
                         </div>
                     </div>
                 </div>

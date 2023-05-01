@@ -35,6 +35,12 @@
                                                 </svg>
                             </a>
                         </div>
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            © 2022-{{date('Y')}} Copyright:
+                            <a class="text-reset fw-bold" href="{{ route('index') }}">{{ config('app.name') }}</a>
+                        </div>
+                        <!-- Copyright -->
                     </div>
                 </div>
             </div>

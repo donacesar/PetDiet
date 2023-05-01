@@ -44,7 +44,6 @@
                     <div class="t-descr t-descr_sm" style="color:#2a2122;" field="li_descr__1518170299525">
                         <ul>
                             <li>Малоподвижные, часто кастрированные/стерилизованные животные</li>
-                            <li>С</li>
                             <li>Нарушения усвояемости корма</li>
                         </ul>
                     </div>
@@ -61,8 +60,7 @@
                     <div class="t-name t-name_md t820__bottommargin" style="color:#2a2122;font-size:20px;" field="li_title__1518172035131">Чувствительный ЖКТ</div>
                     <div class="t-descr t-descr_sm" style="color:#2a2122;" field="li_descr__1518172035131">
                         <ul>
-                            <li>описание проблемы</li>
-                            <li>и ещё одной проблемы</li>
+                            <li>Подбор диеты для нормализации пищеварения</li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +76,7 @@
                     <div class="t-descr t-descr_sm" style="color:#2a2122;" field="li_descr__1518172059965">
                         <ul>
                             <li>Необходимо составить исключающую диету для выявления и исключения аллергена</li>
-                            <li>Сложно разобраться в составах промышленных кормов, </li>
+                            <li>Сложно разобраться в составах промышленных кормов</li>
                         </ul>
                     </div>
                 </div>

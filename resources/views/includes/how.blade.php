@@ -22,9 +22,18 @@
                     <div class="t550__line" style="width: 2px;background: #684c48;"></div>
                 </div>
                 <div class="t550__textwrapper t-cell t-valign_top" style="padding-bottom:80px;">
-                    <div class="t550__title t-name t-name_lg" field="li_title__1479137044697" style="color:#2a2122;font-size:22px;">Вы оставляете заявку или заказываете обратный звонок</div>
+                    <div class="t550__title t-name t-name_lg" field="li_title__1479137044697" style="color:#2a2122;font-size:22px;">Вы оставляете заявку</div>
                     <div class="t550__descr t-text t-text_xs" field="li_descr__1479137044697" style="color:#2a2122;font-size:18px;">
                         Я связываюсь с Вами по телефону или в мессенжере для уточнения деталей<br/>(это не консультация)
+                    </div>
+                    <div class="t228__right_buttons_but">
+                        <a href="/small-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.5em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
+                            <table style="width:100%; height:100%;">
+                                <tr>
+                                    <td>Оставить заявку</td>
+                                </tr>
+                            </table>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -41,9 +50,15 @@
                     <div class="t550__descr t-text t-text_xs" field="li_descr__1479137356907" style="color:#2a2122;font-size:18px;">
                         После этого Вам необходимо заполнить форму заявки на сайте<br/>(кроме консультации без анализа текущего рациона)
                     </div>
-                    <a class="t550__link" href="/full-form" target="_blank">
-                        <div style="color:#2a2122;" data-customstyle="yes">Форма заявки (откроется в новом окне)</div>
-                    </a>
+                    <div class="t228__right_buttons_but">
+                        <a href="/full-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.5em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
+                            <table style="width:100%; height:100%;">
+                                <tr>
+                                    <td>Соcтавить Рацион</td>
+                                </tr>
+                            </table>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="t550__col t-col t-col_8 t-prefix_2">

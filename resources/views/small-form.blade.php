@@ -1,4 +1,4 @@
-@extends('layouts.main-layout')
+@extends('layouts.main-layout' , ['title' => env('APP_NAME').' - Заявка'])
 @section('content')
     <!--allrecords-->
     <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="3664634"
@@ -381,7 +381,7 @@
                             </style>
                         </div>
                         <div class="t678__form-bottom-text t-text t-text_xs" field="text">
-                            <span style="color: rgb(42, 33, 34);">Нажимая кнопку "отправить" Вы даёте согласие на обработку, хранение и удаление предоставляемых персональных данных.</span>
+                            <span style="color: rgb(42, 33, 34);">Нажимая кнопку "отправить" Вы даёте согласие на обработку персональных данных.</span>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@
     <!--/metatextblock-->
 
     <link rel="canonical" href="{{ env('APP_URL') }}">
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{ $title }}</title>
 
     <!-- ASSETS -->
     <link rel="stylesheet" href="{{ asset('css/grid-3.0.min.css') }}" type="text/css"/>
