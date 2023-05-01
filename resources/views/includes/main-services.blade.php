@@ -30,7 +30,7 @@
             <div class="t598__col t-col t-col_4 t-align_center">
                 <div class="t598__content">
                     <div class="t598__imgwrapper">
-                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img" data-original="https://static.tildacdn.info/tild3662-3463-4438-a438-386530313062/free-icon-headset-68.png" style=" background-image: url('https://static.tildacdn.info/tild3662-3463-4438-a438-386530313062/-/resizeb/20x/free-icon-headset-68.png');"></div>
+                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img" data-original="{{ asset('img/chat.png') }}" style=" background-image: url('{{ asset('img/chat.png') }}');"></div>
                     </div>
                     <div class="t598__title t-name t-name_xl" field="title" style=" color:#2a2122;font-size:2px;">
                         <div style="font-size: 18px;" data-customstyle="yes">Чат поддержки</div>
@@ -40,7 +40,7 @@
                             <li>Общие вопросы по состоянию питомца</li>
                         </ul>
                     </div>
-                    <div class="t598__price t-name t-name_md" field="price" style=" color:#2a2122;">2000/месяц</div>
+                    <div class="t598__price t-name t-name_md" field="price" style=" color:#2a2122;">2000 руб. / месяц</div>
                     <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>
@@ -54,7 +54,7 @@
                 <div class="t598__line_mobile" style="background-color: #e0e6ed;"></div>
                 <div class="t598__content">
                     <div class="t598__imgwrapper">
-                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img2" data-original="https://static.tildacdn.info/tild6135-3337-4762-b930-316431396132/free-icon-healthy-fo.png" style=" background-image: url('https://static.tildacdn.info/tild6135-3337-4762-b930-316431396132/-/resizeb/20x/free-icon-healthy-fo.png');"></div>
+                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img2" data-original="{{ asset('img/natural.png') }}" style=" background-image: url('{{ asset('img/natural.png') }}');"></div>
                     </div>
                     <div class="t598__title t-name t-name_xl" field="title2" style=" color:#2a2122;font-size:2px;">
                         <div style="font-size:18px;" data-customstyle="yes">Подбор натурального рациона</div>
@@ -68,7 +68,7 @@
                             <li>Рацион для котят и щенков</li>
                         </ul>
                     </div>
-                    <div class="t598__price t-name t-name_md" field="price2" style=" color:#2a2122;">от 1500</div>
+                    <div class="t598__price t-name t-name_md" field="price2" style=" color:#2a2122;">от 1500 руб.</div>
                     <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>
@@ -83,7 +83,7 @@
                 <div class="t598__line_mobile" style="background-color: #e0e6ed;"></div>
                 <div class="t598__content">
                     <div class="t598__imgwrapper">
-                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img3" data-original="https://static.tildacdn.info/tild3631-6635-4331-a438-306536333838/premium-icon-pet-foo.png" style=" background-image: url('https://static.tildacdn.info/tild3631-6635-4331-a438-306536333838/-/resizeb/20x/premium-icon-pet-foo.png');"></div>
+                        <div class="t598__bgimg t-margin_auto t-bgimg" bgimgfield="img3" data-original="{{ asset('img/industrial.png') }}" style=" background-image: url('{{ asset('img/industrial.png') }}');"></div>
                     </div>
                     <div class="t598__title t-name t-name_xl" field="title3" style=" color:#2a2122;font-size:2px;">
                         <div style="font-size:18px;" data-customstyle="yes">Подбор промышленного корма</div>
@@ -94,7 +94,7 @@
                             <li>Подбор как среди зарубежных, так и среди отечественных производителей</li>
                         </ul>
                     </div>
-                    <div class="t598__price t-name t-name_md" field="price3" style=" color:#2a2122;">800</div>
+                    <div class="t598__price t-name t-name_md" field="price3" style=" color:#2a2122;">800 руб.</div>
                     <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>

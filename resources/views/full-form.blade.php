@@ -1,4 +1,4 @@
-@extends('layouts.main-layout', ['title' => env('APP_NAME'). ' - рацион'])
+@extends('layouts.main-layout', ['title' => env('APP_NAME'). ' - Рацион'])
 @section('content')
 
     <!--allrecords-->

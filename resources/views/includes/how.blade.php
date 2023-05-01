@@ -27,7 +27,7 @@
                         Я связываюсь с Вами по телефону или в мессенжере для уточнения деталей<br/>(это не консультация)
                     </div>
                     <div class="t228__right_buttons_but">
-                        <a href="/small-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.5em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
+                        <a href="/small-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.2em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
                             <table style="width:100%; height:100%;">
                                 <tr>
                                     <td>Оставить заявку</td>
@@ -51,10 +51,10 @@
                         После этого Вам необходимо заполнить форму заявки на сайте<br/>(кроме консультации без анализа текущего рациона)
                     </div>
                     <div class="t228__right_buttons_but">
-                        <a href="/full-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.5em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
+                        <a href="/full-form" target="" class="t-btn js-click-stat" data-tilda-event-name="/tilda/click/rec433650632/button2" style="margin-top: 25px; font-size: 1.2em; color:#fff;background-color:rgba(42,33,34,0.50);border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;">
                             <table style="width:100%; height:100%;">
                                 <tr>
-                                    <td>Соcтавить Рацион</td>
+                                    <td>Соcтавить рацион</td>
                                 </tr>
                             </table>
                         </a>

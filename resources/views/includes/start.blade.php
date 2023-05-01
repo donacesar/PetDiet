@@ -29,13 +29,13 @@
                     </div>
                 </div>
                 <div class="t941__buttonwrapper">
-                    <a href="/full-form" target="" class="t941__btn t-btn js-click-stat " data-tilda-event-name="/tilda/click/rec429261689/button1" data-btneffects-first="btneffects-ripple" style="color:#2a2122;background-color:#c0c88c;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
-                                    <span class="t941__btn-title">Составить рацион</span>
+                    <a href="/small-form" target="" class="t941__btn t-btn js-click-stat " data-tilda-event-name="/tilda/click/rec429261689/button1" data-btneffects-first="btneffects-ripple" style="color:#2a2122;background-color:#c0c88c;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <span class="t941__btn-title">Оставить заявку</span>
                     </a>
                 </div>
             </div>
             <div class="t941__cover-wrap">
-                <div class="t941__cover t-bgimg" bgimgfield="img" data-original="{!! asset('img/main_screen_dog.jpg') !!}" data-animate-style="zoomin" data-animate-group="yes" style="background-image: url('{!! asset('img/main_screen_dog.jpg') !!}');"></div>
+                <div class="t941__cover t-bgimg" bgimgfield="img" data-original="{{ asset('img/main_screen_dog.jpg') }}" data-animate-style="zoomin" data-animate-group="yes" style="background-image: url('{!! asset('img/main_screen_dog.jpg') !!}');"></div>
             </div>
         </div>
     </div>

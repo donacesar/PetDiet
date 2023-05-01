@@ -91,9 +91,9 @@
 <body class="t-body" style="margin:0;">
 
 <div id="allrecords" class="t-records">
-    @include('includes.main-header')
+    @include('includes.header')
     @yield('content')
-    @include('includes.main-footer')
+    @include('includes.footer')
 </div>
 </body>
 </html>
