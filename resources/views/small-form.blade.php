@@ -284,15 +284,15 @@
                                             <div class="t-select__wrapper ">
                                                 <select name="Услуга" class="t-select js-tilda-rule " data-tilda-req="1"
                                                         style="color:#2a2122; border:1px solid #2a2122; ">
-                                                    <option value="Консультация">Консультация</option>
-                                                    <option value="Чат поддержки">Чат поддержки</option>
-                                                    <option value="Подбор натурального рациона">Подбор натурального
+                                                    <option value="consultation">Консультация</option>
+                                                    <option value="chat" {{ $attr == 'chat' ? 'selected' : '' }}>Чат поддержки </option>
+                                                    <option value="natural" {{ $attr == 'natural' ? 'selected' : '' }}>Подбор натурального
                                                         рациона
                                                     </option>
-                                                    <option value="Подбор промышленного корма">Подбор промышленного
+                                                    <option value="industrial" {{ $attr == 'industrial' ? 'selected' : '' }}>Подбор промышленного
                                                         корма
                                                     </option>
-                                                    <option value="Анализ текущего рациона">Анализ текущего рациона
+                                                    <option value="analysis">Анализ текущего рациона
                                                     </option>
                                                 </select>
                                                 <style>

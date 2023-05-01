@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     <div class="t598__price t-name t-name_md" field="price" style=" color:#2a2122;">2000 руб. / месяц</div>
-                    <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                    <a href="/small-form/chat" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>
                                 <td>Получить услугу</td>
@@ -69,7 +69,7 @@
                         </ul>
                     </div>
                     <div class="t598__price t-name t-name_md" field="price2" style=" color:#2a2122;">от 1500 руб.</div>
-                    <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                    <a href="/small-form/natural" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>
                                 <td>Получить услугу</td>
@@ -95,7 +95,7 @@
                         </ul>
                     </div>
                     <div class="t598__price t-name t-name_md" field="price3" style=" color:#2a2122;">800 руб.</div>
-                    <a href="/small-form" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
+                    <a href="/small-form/industrial" target="" class="t598__btn t-btn t-btn_sm" style="color:#2a2122;background-color:#c0c88c;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                         <table style="width:100%; height:100%;">
                             <tr>
                                 <td>Получить услугу</td>
