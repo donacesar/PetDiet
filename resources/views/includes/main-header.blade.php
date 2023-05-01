@@ -21,13 +21,10 @@
                 <div class="t228__centercontainer">
                     <ul class="t228__list ">
                         <li class="t228__list_item" style="padding:0 15px 0 0;">
-                            <a class="t-menu__link-item" href="#rec429934670" data-menu-submenu-hook="" style="color:#f2f2f0;font-weight:600;" data-menu-item-number="1">Услуги</a>
+                            <a class="t-menu__link-item" href="{{ route('index') }}#rec429934670" data-menu-submenu-hook="" style="color:#f2f2f0;font-weight:600;" data-menu-item-number="1">Услуги</a>
                         </li>
                         <li class="t228__list_item" style="padding:0 0 0 15px;">
-                            <a class="t-menu__link-item" href="#rec279567382" data-menu-submenu-hook="" style="color:#f2f2f0;font-weight:600;" data-menu-item-number="2">Блог</a>
-                        </li>
-                        <li class="t228__list_item" style="padding:0 0 0 15px;">
-                            <a class="t-menu__link-item" href="#rec279567382" data-menu-submenu-hook="" style="color:#f2f2f0;font-weight:600;" data-menu-item-number="2">Обо Мне</a>
+                            <a class="t-menu__link-item" href="{{ route('blog') }}" data-menu-submenu-hook="" style="color:#f2f2f0;font-weight:600;" data-menu-item-number="2">Блог</a>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +33,7 @@
                 <div class="t228__rightcontainer">
                     <div class="t228__right_descr" style="color:#f2f2f0;">
                         <div style="font-size: 26px;" data-customstyle="yes">
-                            <p style="text-align: left;">Ветеринарный диетолог</p>
+                            <a style="color: white;" href="{{ route('index') }}"><p style="text-align: left;">Ветеринарный диетолог</p></a>
                         </div>
                     </div>
                     <div class="t228__right_social_links">

@@ -1,1 +1,2 @@
-@extends('layouts.main-layout-test')
+
+@include('archive.index')

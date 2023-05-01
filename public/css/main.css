@@ -11,6 +11,10 @@
     background-color: #C0C88CFF;
 }
 
+.some-place2 {
+    height: 80px;
+    background-color: #b39883;
+}
 @media screen and (max-width: 980px) {
     .some-place {
         display: none;

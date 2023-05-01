@@ -1,4 +1,5 @@
 {{-- Blog --}}
+<div class="some-place2"></div>
 <div id="rec279567382" class="r t-rec t-rec_pt_60 t-rec_pb_45" style="padding-top:60px;padding-bottom:45px;background-color:#b39883; " data-animationappear="off" data-record-type="829" data-bg-color="#b39883">
     <!-- t829 -->
     <div class="t829">

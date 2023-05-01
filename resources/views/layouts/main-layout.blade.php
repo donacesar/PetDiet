@@ -23,21 +23,19 @@
 
     <!-- ASSETS -->
     <link rel="stylesheet" href="{{ asset('css/grid-3.0.min.css') }}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset("css/main.css") }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset("css/blocks-2.14.css") }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('css/animation-1.0.min.css') }}" type="text/css"/>
 
     {{--    Стили при выводе на печать --}}
-    {{--<link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-menusub-1.0.min.css" type="text/css"
-          media="print" onload="this.media='all';" onerror="this.loaderr='y';"/>--}}
+    <link rel="stylesheet" href="{{ asset('css/menusub-1.0.min.css') }}" type="text/css" media="print"/>
 
-
-    {{--    <noscript>--}}
-    {{--        <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-menusub-1.0.min.css" type="text/css"--}}
-    {{--              media="all"/>--}}
-    {{--    </noscript>--}}
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/menusub-1.0.min.css') }}" type="text/css"/>
+    </noscript>
 
     <link rel="stylesheet" href="{{ asset('css/forms-1.0.min.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset("css/main.css") }}" type="text/css"/>
+
     <script src="{{ asset('js/jquery-1.10.2.min.js') }}"></script>
     <script src="{{ asset('js/scripts-3.0.min.js') }}"></script>
     <script src="{{ asset('js/blocks-2.7.js') }}"></script>
@@ -47,12 +45,9 @@
     <script src="{{ asset('js/cover-1.0.min.js') }}" charset="utf-8" async></script>
     <script src="{{ asset('js/events-1.0.min.js') }}" charset="utf-8" async></script>
 
-    {{--<script src="https://static.tildacdn.info/js/tilda-menusub-1.0.min.js" charset="utf-8" async
-            onerror="this.loaderr='y';"></script>
-    <script src="https://static.tildacdn.info/js/tilda-forms-1.0.min.js" charset="utf-8" async
-            onerror="this.loaderr='y';"></script>
-    <script src="https://static.tildacdn.info/js/masonry-imagesloaded.min.js" charset="utf-8" async
-            onerror="this.loaderr='y';"></script>--}}
+    <script src="{{ asset('js/menusub-1.0.min.js') }}" charset="utf-8" async></script>
+    <script src="{{ asset('js/forms-1.0.min.js') }}" charset="utf-8" async></script>
+    <script src="{{ asset('js/masonry-imagesloaded.min.js') }}" charset="utf-8" async></script>
 
 
     <script type="text/javascript">
