@@ -285,11 +285,11 @@
                                                 <select name="Услуга" class="t-select js-tilda-rule " data-tilda-req="1"
                                                         style="color:#2a2122; border:1px solid #2a2122; ">
                                                     <option value="consultation">Консультация</option>
-                                                    <option value="chat" {{ $attr == 'chat' ? 'selected' : '' }}>Чат поддержки </option>
-                                                    <option value="natural" {{ $attr == 'natural' ? 'selected' : '' }}>Подбор натурального
+                                                    <option value="chat" {{ isset($attr) && $attr == 'chat' ? 'selected' : '' }}>Чат поддержки </option>
+                                                    <option value="natural" {{ isset($attr) && $attr == 'natural' ? 'selected' : '' }}>Подбор натурального
                                                         рациона
                                                     </option>
-                                                    <option value="industrial" {{ $attr == 'industrial' ? 'selected' : '' }}>Подбор промышленного
+                                                    <option value="industrial" {{ isset($attr) && $attr == 'industrial' ? 'selected' : '' }}>Подбор промышленного
                                                         корма
                                                     </option>
                                                     <option value="analysis">Анализ текущего рациона
