@@ -22,3 +22,6 @@ Route::get('/small-form', function () {
 Route::get('/full-form', function () {
     return view('full-form');
 });
+Route::get('/test', function () {
+    return view('test');
+});
