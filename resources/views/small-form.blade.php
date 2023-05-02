@@ -8,12 +8,12 @@
     <div class="some-place"></div>
 
 
-        <div id="rec433668208" class="r t-rec t-rec_pb_0" style="padding-bottom:0px; " data-animationappear="off"
+        <div id="rec433668208" class="r t-rec t-rec_pb_0" style="padding-bottom:0; " data-animationappear="off"
              data-record-type="454">
             <!-- T454 -->
             <div id="nav433668208marker"></div>
             <div id="nav433668208" class="t454 t454__positionstatic "
-                 style="background-color: rgba(192,200,140,1); height:50px; box-shadow: 0px 1px 3px rgba(0,0,0,0.90);"
+                 style="background-color: rgba(192,200,140,1); height:50px; box-shadow: 0 1px 3px rgba(0,0,0,0.90);"
                  data-bgcolor-hex="#c0c88c" data-bgcolor-rgba="rgba(192,200,140,1)" data-navmarker="nav433668208marker"
                  data-appearoffset="" data-bgopacity-two="" data-menushadow="90" data-bgopacity="1" data-menu="yes">
                 <div class="t454__maincontainer t454__c12collumns" style="height:50px;">

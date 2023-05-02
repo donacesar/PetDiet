@@ -1,5 +1,5 @@
 {{-- Full Price --}}
-<div id="rec430381370" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
+<div id="rec430381370" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0;padding-bottom:0;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
     <!-- t842 -->
     <div class="t842">
         <div class="t-section__container t-container">
@@ -18,7 +18,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="https://static.tildacdn.info/tild3339-6338-4166-b633-323966313436/1594285758866.jpg" style="background-image:url('https://static.tildacdn.info/tild3339-6338-4166-b633-323966313436/-/resizeb/20x/1594285758866.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="{{ asset('img/price_1.jpg') }}" style="background-image:url('{{ asset('img/price_1.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -51,7 +51,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="https://static.tildacdn.info/tild3166-3463-4262-a166-393938343661/noroot.png" style="background-image:url('https://static.tildacdn.info/tild3166-3463-4262-a166-393938343661/-/resizeb/20x/noroot.png');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="{{ asset('img/price_2.png') }}" style="background-image:url('{{ asset('img/price_2.png') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -87,7 +87,7 @@
         });
     </script>
 </div>
-<div id="rec430388070" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
+<div id="rec430388070" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0;padding-bottom:0;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
     <!-- t842 -->
     <div class="t842">
         <div class="t-section__container t-container">
@@ -106,7 +106,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="https://static.tildacdn.info/tild3062-6233-4732-b962-653831303030/IMG-20191111-WA00034.jpg" style="background-image:url('https://static.tildacdn.info/tild3062-6233-4732-b962-653831303030/-/resizeb/20x/IMG-20191111-WA00034.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="{{ asset('img/price_3.jpg') }}" style="background-image:url('{{ asset('img/price_3.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -132,7 +132,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="https://static.tildacdn.info/tild6464-6332-4365-a435-656431333730/P9dWQUBTnOQ.jpg" style="background-image:url('https://static.tildacdn.info/tild6464-6332-4365-a435-656431333730/-/resizeb/20x/P9dWQUBTnOQ.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="{{ asset('img/price_4.jpg') }}" style="background-image:url('{{ asset('img/price_4.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -165,7 +165,7 @@
         });
     </script>
 </div>
-<div id="rec430388625" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
+<div id="rec430388625" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0;padding-bottom:0;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
     <!-- t842 -->
     <div class="t842">
         <div class="t-section__container t-container">
@@ -184,7 +184,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="https://static.tildacdn.info/tild3038-6634-4236-a638-326235386637/1597421524409.jpg" style="background-image:url('https://static.tildacdn.info/tild3038-6634-4236-a638-326235386637/-/resizeb/20x/1597421524409.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="{{ asset('img/price_5.jpg') }}" style="background-image:url('{{ asset('img/price_5.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -214,7 +214,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="https://static.tildacdn.info/tild6333-3766-4136-a261-373537653134/1578243572171.jpg" style="background-image:url('https://static.tildacdn.info/tild6333-3766-4136-a261-373537653134/-/resizeb/20x/1578243572171.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="{{ asset('img/price_6.jpg') }}" style="background-image:url('{{ asset('img/price_6.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -248,7 +248,7 @@
         });
     </script>
 </div>
-<div id="rec430389112" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
+<div id="rec430389112" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0;padding-bottom:0;background-color:#f2f2f2; " data-record-type="842" data-bg-color="#f2f2f2">
     <!-- t842 -->
     <div class="t842">
         <div class="t-section__container t-container">
@@ -267,7 +267,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="https://static.tildacdn.info/tild3935-3538-4432-b232-656235386466/1576266021135.jpg" style="background-image:url('https://static.tildacdn.info/tild3935-3538-4432-b232-656235386466/-/resizeb/20x/1576266021135.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126556801" data-original="{{ asset('img/price_7.jpg') }}" style="background-image:url('{{ asset('img/price_7.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">
@@ -295,7 +295,7 @@
                         <div class="t842__wrap">
                             <div class="t842__wrap_left">
                                 <div class="t842__bgwrapper t842__bgwrapper_height" style="">
-                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="https://static.tildacdn.info/tild3635-3937-4761-b638-376633316362/jlgUIF-_65s.jpg" style="background-image:url('https://static.tildacdn.info/tild3635-3937-4761-b638-376633316362/-/resizeb/20x/jlgUIF-_65s.jpg');"></div>
+                                    <div class="t842__bgimg t-bgimg" bgimgfield="li_img__1531126579031" data-original="{{ asset('img/price_8.jpg') }}" style="background-image:url('{{ asset('img/price_8.jpg') }}');"></div>
                                 </div>
                             </div>
                             <div class="t842__wrap_right">

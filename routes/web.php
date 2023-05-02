@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,13 +22,13 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/small-form/{attr}', \App\Http\Controllers\FormController::class);
+Route::get('/small-form/{attr}', FormController::class);
 Route::get('/small-form', function () {
     return view('small-form');
-});
+})->name('small-form.index');
 
 Route::get('/full-form', function () {
-    return view('full-form');
+    return view('full-form')->name('full-form.index');
 });
 
 Route::get('/test', function () {
