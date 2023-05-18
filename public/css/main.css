@@ -15,11 +15,6 @@
     height: 80px;
     background-color: #b39883;
 }
-@media screen and (max-width: 980px) {
-    .some-place {
-        display: none;
-    }
-}
 
 .copyright {
     font-size: 1.5em;
@@ -28,4 +23,25 @@
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
     padding: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .some-place {
+        display: none;
+    }
+    .copyright {
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+
+}
+
+
+
+.favicon-icon {
+    opacity: .58;
+}
+
+.favicon-icon:hover {
+    opacity: 1;
 }

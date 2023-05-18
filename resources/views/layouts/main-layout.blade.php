@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -15,7 +15,7 @@
     <meta property="og:title" content="{{ env('APP_NAME') }}"/>
     <meta property="og:description" content="Ветеринарный диетолог"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="{!! asset('img/main_screen_dog.jpg') !!}"/>
+    <meta property="og:image" content="{{ asset('img/main_screen_dog.jpg') }}"/>
     <!--/metatextblock-->
 
     <link rel="canonical" href="{{ env('APP_URL') }}">
@@ -81,10 +81,10 @@
     </script>
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/site.webmanifest') }}">
 
 
 </head>

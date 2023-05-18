@@ -854,7 +854,7 @@
                                 }
                             </style>
                         </div>
-                        <div class="t678__form-bottom-text t-text t-text_xs" field="text">Нажимая кнопку "отправить" Вы
+                        <div class="t678__form-bottom-text t-text t-text_xs" field="text">Нажимая кнопку "отправить", Вы
                             даёте согласие на обработку персональных данных.
                         </div>
                     </div>

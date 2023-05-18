@@ -381,7 +381,7 @@
                             </style>
                         </div>
                         <div class="t678__form-bottom-text t-text t-text_xs" field="text">
-                            <span style="color: rgb(42, 33, 34);">Нажимая кнопку "отправить" Вы даёте согласие на обработку персональных данных.</span>
+                            <span style="color: rgb(42, 33, 34);">Нажимая кнопку "отправить", Вы даёте согласие на обработку персональных данных.</span>
                         </div>
                     </div>
                 </div>
