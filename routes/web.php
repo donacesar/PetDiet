@@ -10,14 +10,13 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'], function () {
-    Route::get('/', IndexController::class)->name('admin.index');
-    Route::get('/test', TestController::class)->name('admin.test');
+Route::middleware('auth')->group(function() {
+    Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'], function () {
+        Route::get('/', IndexController::class)->name('admin.index');
+        Route::get('/test', TestController::class)->name('admin.test');
 
+    });
 });
-
-
-//Route::get('/admin', \App\Http\Controllers\Admin\IndexController::class)->name('admin.index');
 
 Route::get('/blog', function () {
     return view('blog');
