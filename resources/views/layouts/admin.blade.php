@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }}</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <link rel="preload" as="style" href="/build/assets/app-52b35bbb.css" /><link rel="stylesheet" href="/build/assets/app-52b35bbb.css" />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">
 <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -147,7 +154,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                        <a href="{{ route('change.password') }}" class="nav-link">
                             <i class="nav-icon fas fa-key"></i>
                             <p>Сменить пароль</p>
                         </a>
@@ -166,7 +173,9 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Админка</h1>
+                        <h1 class="m-0">
+                            @yield('header')
+                        </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                     </div><!-- /.col -->
@@ -179,8 +188,8 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
-                        Контент
+                    <div class="col-lg-12">
+                       @yield('content')
                     </div>
                     <!-- /.col-md-6 -->
                 </div>

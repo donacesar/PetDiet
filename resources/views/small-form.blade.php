@@ -267,11 +267,11 @@
                                         </div>
                                         <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70"
                                              data-redactor-toolbar="no" field="li_subtitle__1649493106025"
-                                             style="color:#2a2122;">укажите точную дату рождения, если она известна
+                                             style="color:#2a2122;">укажите примерную или точную дату рождения, если она известна
                                         </div>
                                         <div class="t-input-block">
-                                            <input type="text" name="Возраст животного" class="t-input js-tilda-rule "
-                                                   value="" placeholder="Х лет, Х мес, чч/мм/гггг" data-tilda-req="1"
+                                            <input type="date" name="Возраст животного" class="t-input js-tilda-rule "
+                                                   value=""  data-tilda-req="1"
                                                    style="color:#2a2122; border:1px solid #2a2122; ">
                                             <div class="t-input-error"></div>
                                         </div>

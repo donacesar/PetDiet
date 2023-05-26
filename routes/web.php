@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\ChangePasswordController;
 use App\Http\Controllers\Admin\IndexController;
+use App\Http\Controllers\Admin\StorePasswordController;
 use App\Http\Controllers\Admin\TestController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -10,10 +13,14 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::middleware('auth')->group(function() {
+Route::middleware('auth')->group(function () {
+
     Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'], function () {
+
         Route::get('/', IndexController::class)->name('admin.index');
-        Route::get('/test', TestController::class)->name('admin.test');
+        Route::get('test', TestController::class)->name('admin.test');
+        Route::get('change-password', ChangePasswordController::class)->name('change.password');
+        Route::post('change-password', StorePasswordController::class)->name('store.password');
 
     });
 });
@@ -23,6 +30,7 @@ Route::get('/blog', function () {
 })->name('blog');
 
 Route::get('/small-form/{attr}', FormController::class);
+
 Route::get('/small-form', function () {
     return view('small-form');
 });

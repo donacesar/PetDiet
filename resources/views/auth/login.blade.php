@@ -38,7 +38,7 @@
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox"
                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ml-2 text-sm text-gray-600">{{ __('Запомнить меня') }}</span>
+                <span class="ml-2 text-sm text-gray-600">{{ __('Запомнить меня надолго') }}</span>
             </label>
         </div>
 
