@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('favorite_connections', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->id();
             $table->string('category');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('favorite_connections');
+        Schema::dropIfExists('services');
     }
 };

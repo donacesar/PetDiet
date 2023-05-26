@@ -12,9 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pet_sexes', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('category');
-            $table->smallInteger('category_id');
+            $table->unsignedBigInteger('category_id')->index();
             $table->timestamps();
         });
     }

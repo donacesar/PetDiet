@@ -177,9 +177,9 @@
                                              field="li_title__1495040492013" style="color:#2a2122;">Ваш телефон*
                                         </div>
                                         <div class="t-input-block">
-                                            <input type="tel" autocomplete="tel" name="Телефон"
+                                            <input type="tel" autocomplete="tel" name="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                                    class="t-input js-tilda-rule " value="" data-tilda-req="1"
-                                                   data-tilda-rule="phone" pattern="[0-9]*"
+                                                   data-tilda-rule="phone"
                                                    style="color:#2a2122; border:1px solid #2a2122; ">
                                             <div class="t-input-error"></div>
                                         </div>
