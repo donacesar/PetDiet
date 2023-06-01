@@ -45,3 +45,47 @@
 .favicon-icon:hover {
     opacity: 1;
 }
+
+.simple_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #f2f2f0;
+    padding: 200px 100px 0 100px;
+    height: 400px;
+}
+
+.back_link {
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+.back_link a{
+    color: rgba(108, 71, 32, 0.62);
+}
+
+.back_link a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.back_link svg {
+    fill: rgba(108, 71, 32, 0.62);
+}
+
+.back_link svg:hover {
+    fill: black;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 980px) {
+    .some-place2 {
+        display: none;
+    }
+
+    .simple_container {
+        font-size: 0.8em;
+        padding: 100px 100px 0 100px;
+    }
+}

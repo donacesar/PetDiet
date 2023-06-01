@@ -5,7 +5,7 @@ use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\StorePasswordController;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Http\Controllers\FormController;
+use App\Http\Controllers\SmallFormController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,11 +29,15 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/small-form/{attr}', FormController::class);
+Route::get('/small-form', [SmallFormController::class, 'index'])->name('small_form.index');
+Route::post('/small-form', [SmallFormController::class, 'create'])->name('small_form.create');
+Route::get('/success_message', function () {
+    return view('success_message');
+})->name('success_message');
 
-Route::get('/small-form', function () {
-    return view('small-form');
-});
+//Route::get('/small-form', function () {
+//    return view('small-form');
+//});
 
 Route::get('/full-form', function () {
     return view('full-form');

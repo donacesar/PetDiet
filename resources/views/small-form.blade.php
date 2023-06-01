@@ -5,7 +5,7 @@
          data-tilda-page-id="26862938" data-tilda-page-alias="zayavka-easy"
          data-tilda-formskey="01774ea7e43ddb4d5d26439f93664634" data-tilda-lazy="yes">
 
-    <div class="some-place"></div>
+        <div class="some-place"></div>
 
 
         <div id="rec433668208" class="r t-rec t-rec_pb_0" style="padding-bottom:0; " data-animationappear="off"
@@ -146,69 +146,46 @@
                 <div class="t-container">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div>
-                            <form id="form433663493" name='form433663493' role="form" action='' method='GET'
-                                  data-formactiontype="2" data-inputbox=".t-input-group"
-                                  data-success-url="http://pet-diets-test.tilda.ws"
-                                  class="t-form js-form-proccess t-form_inputs-total_8 "
-                                  data-success-callback="t678_onSuccess">
-                                <input type="hidden" name="formservices[]" value="e01e7c26fa36ace50f4904886a150baa"
-                                       class="js-formaction-services">
-                                <input type="hidden" name="formservices[]" value="1465b6708608bf30b12f177e235dc8d1"
-                                       class="js-formaction-services">
-                                <div class="js-successbox t-form__successbox t-text t-text_md"
-                                     style="display:none;color:#2a2122;background-color:#c0c88c;">Спасибо. Ваша заявка в
-                                    обработке!
-                                </div>
+                            <form action='{{ route('small_form.create') }}' method='POST'>
+
+                                @csrf
+
                                 <div class="t-form__inputsbox">
-                                    <div class="t-input-group t-input-group_nm" data-input-lid="1494858943227">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1494858943227" style="color:#2a2122;">Ваше Имя*
+                                    <div class="t-input-group t-input-group_nm">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Ваше Имя*
                                         </div>
                                         <div class="t-input-block">
-                                            <input type="text" autocomplete="name" name="Имя"
-                                                   class="t-input js-tilda-rule " value="" data-tilda-req="1"
-                                                   data-tilda-rule="name"
-                                                   style="color:#2a2122; border:1px solid #2a2122; ">
+                                            <input type="text" autocomplete="name" name="name"
+                                                   class="t-input js-tilda-rule "
+                                                   style="color:#2a2122; border:1px solid #2a2122; " required>
+                                        </div>
+                                    </div>
+                                    <div class="t-input-group t-input-group_ph">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Ваш телефон*</div>
+                                        <div class="t-input-block">
+                                            <input type="tel" autocomplete="tel" name="phone" pattern="[0-9\s\-\+\(\)]*"
+                                                   class="t-input js-tilda-rule " value="" style="color:#2a2122; border:1px solid #2a2122; " required>
                                             <div class="t-input-error"></div>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_ph" data-input-lid="1495040492013">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1495040492013" style="color:#2a2122;">Ваш телефон*
-                                        </div>
+                                    <div class="t-input-group t-input-group_em">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Ваш Email</div>
                                         <div class="t-input-block">
-                                            <input type="tel" autocomplete="tel" name="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                                   class="t-input js-tilda-rule " value="" data-tilda-req="1"
-                                                   data-tilda-rule="phone"
-                                                   style="color:#2a2122; border:1px solid #2a2122; ">
-                                            <div class="t-input-error"></div>
+                                            <input type="text" autocomplete="email" name="email"
+                                                   class="t-input js-tilda-rule " value="" style="color:#2a2122; border:1px solid #2a2122; ">
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_em" data-input-lid="1493283059688">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1493283059688" style="color:#2a2122;">Ваш Email
-                                        </div>
-                                        <div class="t-input-block">
-                                            <input type="text" autocomplete="email" name="Email"
-                                                   class="t-input js-tilda-rule " value="" data-tilda-rule="email"
-                                                   style="color:#2a2122; border:1px solid #2a2122; ">
-                                            <div class="t-input-error"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-input-group t-input-group_sb" data-input-lid="1649492939705">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1649492939705" style="color:#2a2122;">Предпочтительный
-                                            способ связи*
-                                        </div>
+                                    <div class="t-input-group t-input-group_sb">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Предпочтительный
+                                            способ связи*</div>
                                         <div class="t-input-block">
                                             <div class="t-select__wrapper ">
-                                                <select name="Предпочтительный способ связи"
-                                                        class="t-select js-tilda-rule " data-tilda-req="1"
-                                                        style="color:#2a2122; border:1px solid #2a2122; ">
-                                                    <option value="Телефон">Телефон</option>
-                                                    <option value="Email">Email</option>
-                                                    <option value="WhatsApp">WhatsApp</option>
-                                                    <option value="Telegram">Telegram</option>
+                                                <select name="favorite_connection"
+                                                        class="t-select js-tilda-rule " style="color:#2a2122; border:1px solid #2a2122; ">
+                                                    <option value="1">Телефон</option>
+                                                    <option value="2">Email</option>
+                                                    <option value="3">WhatsApp</option>
+                                                    <option value="4">Telegram</option>
                                                 </select>
                                                 <style>
                                                     #rec433663493 .t-select__wrapper:after {
@@ -216,41 +193,29 @@
                                                     }
                                                 </style>
                                             </div>
-                                            <div class="t-input-error"></div>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_in" data-input-lid="1649493139191">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1649493139191" style="color:#2a2122;">Кличка питомца*
-                                        </div>
+                                    <div class="t-input-group t-input-group_in">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Кличка питомца*</div>
                                         <div class="t-input-block">
-                                            <input type="text" name="Кличка" class="t-input js-tilda-rule " value=""
-                                                   data-tilda-req="1" style="color:#2a2122; border:1px solid #2a2122; ">
+                                            <input type="text" name="pet_name" class="t-input js-tilda-rule " value=""
+                                                   style="color:#2a2122; border:1px solid #2a2122; " required>
                                             <div class="t-input-error"></div>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_sb" data-input-lid="1649492870179">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1649492870179" style="color:#2a2122;">Пол питомца*
-                                        </div>
+                                    <div class="t-input-group t-input-group_sb">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Пол питомца*</div>
                                         <div class="t-input-block">
                                             <div class="t-select__wrapper ">
-                                                <select name="Пол питомца" class="t-select js-tilda-rule "
-                                                        data-tilda-req="1"
-                                                        style="color:#2a2122; border:1px solid #2a2122; ">
-                                                    <option value="Кобель (не кастрирован)">Кобель (не кастрирован)
-                                                    </option>
-                                                    <option value="Кобель (кастрирован)">Кобель (кастрирован)</option>
-                                                    <option value="Собака (не стерилизована)">Собака (не
-                                                        стерилизована)
-                                                    </option>
-                                                    <option value="Собака (стерилизована)">Собака (стерилизована)
-                                                    </option>
-                                                    <option value="Кот (не кастрирован)">Кот (не кастрирован)</option>
-                                                    <option value="Кот (кастрирован)">Кот (кастрирован)</option>
-                                                    <option value="Кошка (не стерилизована)">Кошка (не стерилизована)
-                                                    </option>
-                                                    <option value="Кошка (стерилизована)">Кошка (стерилизована)</option>
+                                                <select name="pet_sex" class="t-select js-tilda-rule " style="color:#2a2122; border:1px solid #2a2122; ">
+                                                    <option value="1">Кобель (не кастрирован)</option>
+                                                    <option value="2">Кобель (кастрирован)</option>
+                                                    <option value="3">Собака (не стерилизована)</option>
+                                                    <option value="4">Собака (стерилизована)</option>
+                                                    <option value="5">Кот (не кастрирован)</option>
+                                                    <option value="6">Кот (кастрирован)</option>
+                                                    <option value="7">Кошка (не стерилизована)</option>
+                                                    <option value="8">Кошка (стерилизована)</option>
                                                 </select>
                                                 <style>
                                                     #rec433663493 .t-select__wrapper:after {
@@ -258,62 +223,43 @@
                                                     }
                                                 </style>
                                             </div>
-                                            <div class="t-input-error"></div>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_in" data-input-lid="1649493106025">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1649493106025" style="color:#2a2122;">Возраст питомца*
-                                        </div>
-                                        <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70"
-                                             data-redactor-toolbar="no" field="li_subtitle__1649493106025"
-                                             style="color:#2a2122;">укажите примерную или точную дату рождения, если она известна
+                                    <div class="t-input-group t-input-group_in">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Возраст питомца*</div>
+                                        <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" style="color:#2a2122;">
+                                            укажите примерную или точную дату рождения, если она известна
                                         </div>
                                         <div class="t-input-block">
-                                            <input type="date" name="Возраст животного" class="t-input js-tilda-rule "
-                                                   value=""  data-tilda-req="1"
-                                                   style="color:#2a2122; border:1px solid #2a2122; ">
-                                            <div class="t-input-error"></div>
+                                            <input type="date" name="age" class="t-input js-tilda-rule "
+                                                   value="" style="color:#2a2122; border:1px solid #2a2122; " required>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_sb" data-input-lid="1649493388764">
-                                        <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
-                                             field="li_title__1649493388764" style="color:#2a2122;">Выберите услугу*
-                                        </div>
+                                    <div class="t-input-group t-input-group_sb">
+                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Выберите услугу*</div>
                                         <div class="t-input-block">
                                             <div class="t-select__wrapper ">
-                                                <select name="Услуга" class="t-select js-tilda-rule " data-tilda-req="1"
-                                                        style="color:#2a2122; border:1px solid #2a2122; ">
-                                                    <option value="consultation">Консультация</option>
-                                                    <option value="chat" {{ isset($attr) && $attr == 'chat' ? 'selected' : '' }}>Чат поддержки </option>
-                                                    <option value="natural" {{ isset($attr) && $attr == 'natural' ? 'selected' : '' }}>Подбор натурального
+                                                <select name="service" class="t-select js-tilda-rule" style="color:#2a2122; border:1px solid #2a2122; ">
+                                                    <option value="1">Консультация</option>
+                                                    <option value="2" {{ isset($attr) && $attr == 'chat' ? 'selected' : '' }}>
+                                                        Чат поддержки
+                                                    </option>
+                                                    <option value="3" {{ isset($attr) && $attr == 'natural' ? 'selected' : '' }}>
+                                                        Подбор натурального
                                                         рациона
                                                     </option>
-                                                    <option value="industrial" {{ isset($attr) && $attr == 'industrial' ? 'selected' : '' }}>Подбор промышленного
+                                                    <option
+                                                        value="4" {{ isset($attr) && $attr == 'industrial' ? 'selected' : '' }}>
+                                                        Подбор промышленного
                                                         корма
                                                     </option>
-                                                    <option value="analysis">Анализ текущего рациона
-                                                    </option>
+                                                    <option value="5">Анализ текущего рациона</option>
                                                 </select>
                                                 <style>
                                                     #rec433663493 .t-select__wrapper:after {
                                                         border-top-color: #2a2122;
                                                     }
                                                 </style>
-                                            </div>
-                                            <div class="t-input-error"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-form__errorbox-middle">
-                                        <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
-                                            <div class="t-form__errorbox-text t-text t-text_md">
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
                                             </div>
                                         </div>
                                     </div>
@@ -322,19 +268,6 @@
                                                 style="color:#2a2122;background-color:#b39883;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
                                             Отправить
                                         </button>
-                                    </div>
-                                </div>
-                                <div class="t-form__errorbox-bottom">
-                                    <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
-                                        <div class="t-form__errorbox-text t-text t-text_md">
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
-                                        </div>
                                     </div>
                                 </div>
                             </form>

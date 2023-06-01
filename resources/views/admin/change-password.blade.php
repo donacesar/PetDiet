@@ -23,7 +23,7 @@
                 <!-- Password -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password">
-                        Пароль
+                        Новый пароль
                     </label>
 
                     <input

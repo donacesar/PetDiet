@@ -90,7 +90,7 @@
 </head>
 <body class="t-body" style="margin:0;">
 
-<div id="allrecords" class="t-records">
+<div  class="t-records">
     @include('includes.header')
     @yield('content')
     @include('includes.footer')
