@@ -40,10 +40,10 @@ Route::post('/small-form', [SmallOrderController::class, 'create'])->name('small
 Route::get('/success_message', function () { return view('success_message'); })->name('success_message');
 
 Route::middleware('auth')->group(function(){
-    Route::get('small_orders', [SmallOrderController::class, 'index'])->name('small_order.index');
-    Route::patch('finish/{small_order}', [SmallOrderController::class, 'finish'])->name('small_order.finish');
-    Route::get('finished_small_orders', [SmallOrderController::class, 'finishIndex'])->name('finished_small_order.index');
-    Route::delete('small_order/{small_order}', [SmallOrderController::class, 'delete'])->name('small_order.delete');
+    Route::get('/small_orders', [SmallOrderController::class, 'index'])->name('small_order.index');
+    Route::patch('/finish/{small_order}', [SmallOrderController::class, 'finish'])->name('small_order.finish');
+    Route::get('/finished_small_orders', [SmallOrderController::class, 'finishIndex'])->name('finished_small_order.index');
+    Route::delete('/small_order/{small_order}', [SmallOrderController::class, 'delete'])->name('small_order.delete');
 });
 
 
