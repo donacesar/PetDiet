@@ -228,7 +228,7 @@
                                     <div class="t-input-group t-input-group_in">
                                         <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Возраст питомца*</div>
                                         <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" style="color:#2a2122;">
-                                            укажите примерную или точную дату рождения, если она известна
+                                            укажите примерную или точную дату рождения
                                         </div>
                                         <div class="t-input-block">
                                             <input type="date" name="age" class="t-input js-tilda-rule "

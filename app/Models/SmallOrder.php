@@ -19,7 +19,7 @@ class SmallOrder extends Model
         return $this->belongsTo(PetSex::class, 'pet_sex', 'category_id');
     }
 
-    public function service() {
+    public function orderService() {
         return $this->belongsTo(Service::class, 'service', 'category_id');
     }
 }

@@ -25,7 +25,45 @@
     padding: 5px;
 }
 
+.button-finish {
+    color: rgba(0, 72, 255, 0.66);
+}
+.button-finish:hover {
+    color: rgb(0, 85, 255);
+    transition: 0.1s;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.mobile td{
+    font-size: 0.7rem;
+}
+.mobile-td {
+    font-weight: bold;
+}
+
+
+
 @media screen and (max-width: 980px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     .some-place {
         display: none;
     }

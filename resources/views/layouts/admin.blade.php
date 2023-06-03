@@ -7,10 +7,11 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
 
     <!-- Scripts -->
-    <link rel="preload" as="style" href="/build/assets/app-52b35bbb.css" /><link rel="stylesheet" href="/build/assets/app-52b35bbb.css" />
+    <link rel="preload" as="style" href="/build/assets/app-52b35bbb.css"/>
+    <link rel="stylesheet" href="/build/assets/app-52b35bbb.css"/>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
@@ -34,7 +35,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                     <i class="fas fa-phone-square-alt"></i>
-                    <span class="badge badge-danger navbar-badge">3</span>
+                    @if($count_small_orders != 0)
+                        <span class="badge badge-danger navbar-badge">{{ $count_small_orders }}</span>
+                    @endif
                 </a>
             </li>
 
@@ -74,83 +77,58 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                     data-accordion="false">
+
+                    <li class="nav-item">
+                        <a href="{{ route('small_order.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-phone-alt"></i>
+                            <p>
+                                Простая заявка
+                                @if($count_small_orders != 0)
+                                    <span class="badge badge-info right">{{ $count_small_orders }}</span>
+                                @endif
+                            </p>
+                        </a>
+                    </li>
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-calendar-alt"></i>
+                            <i class="nav-icon fas fa-file"></i>
                             <p>
-                                Calendar
+                                Полная заявка
                                 <span class="badge badge-info right">2</span>
                             </p>
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a class="nav-link">
                             <i class="nav-icon fas fa-edit"></i>
                             <p>
-                                Forms
+                                Архив заявок
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ route('finished_small_order.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>General Elements</p>
+                                    <p>Простые заявки</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Advanced Elements</p>
+                                    <p>Полные заявки</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Editors</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Validation</p>
-                                </a>
-                            </li>
+
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-table"></i>
-                            <p>
-                                Tables
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Simple Tables</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>DataTables</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>jsGrid</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-                            <i class="nav-icon fas fa-file"></i>
-                            <p>Documentation</p>
+                            <i class="nav-icon fab fa-telegram-plane"></i>
+                            <p>Настройка бота</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -173,7 +151,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">
+                        <h1 class="m-0 mobile-h">
                             @yield('header')
                         </h1>
                     </div><!-- /.col -->
@@ -189,7 +167,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                       @yield('content')
+                        @yield('content')
                     </div>
                     <!-- /.col-md-6 -->
                 </div>

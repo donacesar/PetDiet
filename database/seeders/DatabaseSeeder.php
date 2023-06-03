@@ -18,12 +18,10 @@ class DatabaseSeeder extends Seeder
              UserSeeder::class,
              FavoriteConnectionSeeder::class,
              PetSexSeeder::class,
-             ServiceSeeder::class
+             ServiceSeeder::class,
+             SmallOrderSeeder::class
          ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+
     }
 }

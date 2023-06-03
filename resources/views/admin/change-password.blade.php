@@ -1,8 +1,10 @@
-@extends('layouts.admin',['title' => env('APP_NAME').' Админка'])
+@extends('layouts.admin',['title' => env('APP_NAME').' Админка',
+ 'count_small_orders' => null,
+ 'count_full_orders' => null])
 
 @section('header')
-Смена логина и/или пароля
-    @endsection
+    Смена логина и/или пароля
+@endsection
 @section('content')
     <div class="min-h-screen flex flex-col sm:justify-start align-items-start pt-6 sm:pt-0 bg-gray-100">
 
