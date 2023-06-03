@@ -101,7 +101,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-edit"></i>
                             <p>
                                 Архив заявок
