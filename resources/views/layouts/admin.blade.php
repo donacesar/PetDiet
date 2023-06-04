@@ -33,7 +33,7 @@
         <ul class="navbar-nav ml-auto">
             <!-- Messages Dropdown Menu -->
             <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
+                <a  href="{{ route('small_order.index') }}" class="nav-link">
                     <i class="fas fa-phone-square-alt"></i>
                     @if($count_small_orders != 0)
                         <span class="badge badge-danger navbar-badge">{{ $count_small_orders }}</span>
@@ -200,11 +200,5 @@
 <!-- AdminLTE -->
 <script src="{{ asset('/dist/js/adminlte.js') }}"></script>
 
-<!-- OPTIONAL SCRIPTS -->
-{{--<script src="{{ asset('/plugins/chart.js/Chart.min.js') }}"></script>--}}
-<!-- AdminLTE for demo purposes -->
-{{--<script src="{{ asset('/dist/js/demo.js') }}"></script>--}}
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-{{--<script src="{{ asset('/dist/js/pages/dashboard3.js') }}"></script>--}}
 </body>
 </html>
