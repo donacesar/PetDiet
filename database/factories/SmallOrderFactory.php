@@ -21,12 +21,9 @@ class SmallOrderFactory extends Factory
     {
         return [
             'name' => fake()->firstName,
-            'phone' => fake()->e164PhoneNumber,
+            'phone' => fake()->phoneNumber,
             'email' => fake()->email,
             'favorite_connection' => rand(1,4),
-            'pet_name' => fake()->firstName,
-            'pet_sex' => rand(1,4),
-            'age' => fake()->date('Y-m-d'),
             'service' => rand(1,4),
             'finished' => rand(0,1)
         ];

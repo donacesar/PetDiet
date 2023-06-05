@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::table('small_orders', function (Blueprint $table) {
             $table->foreign('favorite_connection')->references('category_id')->on('favorite_connections');
-            $table->foreign('pet_sex')->references('category_id')->on('pet_sexes');
             $table->foreign('service')->references('category_id')->on('services');
         });
     }

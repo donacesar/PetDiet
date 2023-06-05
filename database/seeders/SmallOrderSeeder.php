@@ -14,6 +14,6 @@ class SmallOrderSeeder extends Seeder
      */
     public function run(): void
     {
-        SmallOrder::factory(10)->create();
+        SmallOrder::factory(25)->create();
     }
 }

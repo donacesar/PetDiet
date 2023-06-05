@@ -195,46 +195,46 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="t-input-group t-input-group_in">
-                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Кличка питомца*</div>
-                                        <div class="t-input-block">
-                                            <input type="text" name="pet_name" class="t-input js-tilda-rule " value=""
-                                                   style="color:#2a2122; border:1px solid #2a2122; " required>
-                                            <div class="t-input-error"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-input-group t-input-group_sb">
-                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Пол питомца*</div>
-                                        <div class="t-input-block">
-                                            <div class="t-select__wrapper ">
-                                                <select name="pet_sex" class="t-select js-tilda-rule " style="color:#2a2122; border:1px solid #2a2122; ">
-                                                    <option value="1">Кобель (не кастрирован)</option>
-                                                    <option value="2">Кобель (кастрирован)</option>
-                                                    <option value="3">Собака (не стерилизована)</option>
-                                                    <option value="4">Собака (стерилизована)</option>
-                                                    <option value="5">Кот (не кастрирован)</option>
-                                                    <option value="6">Кот (кастрирован)</option>
-                                                    <option value="7">Кошка (не стерилизована)</option>
-                                                    <option value="8">Кошка (стерилизована)</option>
-                                                </select>
-                                                <style>
-                                                    #rec433663493 .t-select__wrapper:after {
-                                                        border-top-color: #2a2122;
-                                                    }
-                                                </style>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="t-input-group t-input-group_in">
-                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Возраст питомца*</div>
-                                        <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" style="color:#2a2122;">
-                                            укажите примерную или точную дату рождения
-                                        </div>
-                                        <div class="t-input-block">
-                                            <input type="date" name="age" class="t-input js-tilda-rule "
-                                                   value="" style="color:#2a2122; border:1px solid #2a2122; " required>
-                                        </div>
-                                    </div>
+{{--                                    <div class="t-input-group t-input-group_in">--}}
+{{--                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Кличка питомца*</div>--}}
+{{--                                        <div class="t-input-block">--}}
+{{--                                            <input type="text" name="pet_name" class="t-input js-tilda-rule " value=""--}}
+{{--                                                   style="color:#2a2122; border:1px solid #2a2122; " required>--}}
+{{--                                            <div class="t-input-error"></div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="t-input-group t-input-group_sb">--}}
+{{--                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Пол питомца*</div>--}}
+{{--                                        <div class="t-input-block">--}}
+{{--                                            <div class="t-select__wrapper ">--}}
+{{--                                                <select name="pet_sex" class="t-select js-tilda-rule " style="color:#2a2122; border:1px solid #2a2122; ">--}}
+{{--                                                    <option value="1">Кобель (не кастрирован)</option>--}}
+{{--                                                    <option value="2">Кобель (кастрирован)</option>--}}
+{{--                                                    <option value="3">Собака (не стерилизована)</option>--}}
+{{--                                                    <option value="4">Собака (стерилизована)</option>--}}
+{{--                                                    <option value="5">Кот (не кастрирован)</option>--}}
+{{--                                                    <option value="6">Кот (кастрирован)</option>--}}
+{{--                                                    <option value="7">Кошка (не стерилизована)</option>--}}
+{{--                                                    <option value="8">Кошка (стерилизована)</option>--}}
+{{--                                                </select>--}}
+{{--                                                <style>--}}
+{{--                                                    #rec433663493 .t-select__wrapper:after {--}}
+{{--                                                        border-top-color: #2a2122;--}}
+{{--                                                    }--}}
+{{--                                                </style>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="t-input-group t-input-group_in">--}}
+{{--                                        <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Возраст питомца*</div>--}}
+{{--                                        <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" style="color:#2a2122;">--}}
+{{--                                            укажите примерную или точную дату рождения--}}
+{{--                                        </div>--}}
+{{--                                        <div class="t-input-block">--}}
+{{--                                            <input type="date" name="age" class="t-input js-tilda-rule "--}}
+{{--                                                   value="" style="color:#2a2122; border:1px solid #2a2122; " required>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
                                     <div class="t-input-group t-input-group_sb">
                                         <div class="t-input-title t-descr t-descr_md" style="color:#2a2122;">Выберите услугу*</div>
                                         <div class="t-input-block">

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
 </head>
 <body class="hold-transition sidebar-mini" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">
-<div class="wrapper">
+<div class="wrapper wrapper-custom">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -34,9 +34,9 @@
             <!-- Messages Dropdown Menu -->
             <li class="nav-item dropdown">
                 <a  href="{{ route('small_order.index') }}" class="nav-link">
-                    <i class="fas fa-phone-square-alt"></i>
+                    <i class="fas fas fa-phone-alt"></i>
                     @if($count_small_orders != 0)
-                        <span class="badge badge-danger navbar-badge">{{ $count_small_orders }}</span>
+                        <span class="badge badge-danger navbar-badge menu-badge">{{ $count_small_orders }}</span>
                     @endif
                 </a>
             </li>
@@ -63,7 +63,7 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 sidebar-my-custom">
         <!-- Brand Logo -->
         <a href="{{ route('admin.index') }}" class="brand-link">
             <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
@@ -151,7 +151,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 mobile-h">
+                        <h1 class="m-0 mobile-h" style="font-size: 1.2em">
                             @yield('header')
                         </h1>
                     </div><!-- /.col -->

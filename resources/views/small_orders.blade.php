@@ -13,7 +13,7 @@
 
         <!-- /.card-header -->
         <div class="card-body table-responsive p-0">
-            <table class="table table-hover text-nowrap">
+            <table class="table table-hover text-nowrap table-desktop">
                 <thead>
                 <tr>
                     <th>Время</th>
@@ -21,9 +21,9 @@
                     <th>Телефон</th>
                     <th>Email</th>
                     <th>Связь</th>
-                    <th>Кличка</th>
-                    <th>Пол</th>
-                    <th>Возраст</th>
+{{--                    <th>Кличка</th>--}}
+{{--                    <th>Пол</th>--}}
+{{--                    <th>Возраст</th>--}}
                     <th>Услуга</th>
                     <th>Завершить</th>
                     <th>Удалить</th>
@@ -39,9 +39,9 @@
                         </td>
                         <td>{{ $small_order->email }}</td>
                         <td>{!! favorite_connectionFilter($small_order->favorite_connection) !!}</td>
-                        <td>{{ $small_order->pet_name }}</td>
-                        <td>{{ $small_order->petSex->category }}</td>
-                        <td>{{ birthdayFilter($small_order) }} лет</td>
+{{--                        <td>{{ $small_order->pet_name }}</td>--}}
+{{--                        <td>{{ $small_order->petSex->category }}</td>--}}
+{{--                        <td>{{ birthdayFilter($small_order) }} лет</td>--}}
                         <td>{{ $small_order->orderService->category }}</td>
                         <td>
                             @if(!$small_order->finished === true)
@@ -103,18 +103,6 @@
                     <tr class="mobile">
                         <td class="mobile-td">Связь</td>
                         <td>{!! favorite_connectionFilter($small_order->favorite_connection) !!}</td>
-                    </tr>
-                    <tr class="mobile">
-                        <td class="mobile-td">Кличка</td>
-                        <td>{{ $small_order->pet_name }}</td>
-                    </tr>
-                    <tr class="mobile">
-                        <td class="mobile-td">Пол</td>
-                        <td>{{ $small_order->petSex->category }}</td>
-                    </tr>
-                    <tr class="mobile">
-                        <td class="mobile-td">Возраст</td>
-                        <td>{{ birthdayFilter($small_order) }} лет</td>
                     </tr>
                     <tr class="mobile">
                     <td>Услуга</td>
