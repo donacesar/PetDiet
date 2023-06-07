@@ -87,11 +87,11 @@
                     <thead>
                     <tr class="mobile">
                         <td class="mobile-td" class="mobile">Время</td>
-                        <td>{{ $full_order->created_at->format('d/m/Y h:m:i') }}</td>
+                        <td><a href="{{ route('full_order.show', $full_order) }}">{{ $full_order->created_at->format('d/m/Y h:m:i') }}</a></td>
                     </tr>
                     <tr class="mobile">
                         <td class="mobile-td" class="mobile">Имя</td>
-                        <td>{{ $full_order->name }}</td>
+                        <td><a href="{{ route('full_order.show', $full_order) }}">{{ $full_order->name }}</a></td>
                     </tr>
                     <tr class="mobile">
                         <td class="mobile-td">Телефон</td>

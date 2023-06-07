@@ -43,9 +43,8 @@ class FullOrderController extends Controller
 
     public function finishIndex()
     {
-        $full_orders = FullOrder::where('finished', false)->get();
-        $finished_full_orders = FullOrder::where('finished', true)->get();
-        return view('finished_full_orders', compact(['full_orders', 'finished_full_orders']));
+        $full_orders = FullOrder::where('finished', true)->get();
+        return view('finished_full_orders', compact(['full_orders']));
     }
 
     public function delete(FullOrder $full_order)
