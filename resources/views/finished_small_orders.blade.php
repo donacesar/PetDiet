@@ -9,7 +9,7 @@
 
 @section('content')
 
-    <div class="card desktop">
+    <div class="card desktop opacity-50">
 
         <!-- /.card-header -->
         <div class="card-body table-responsive p-0">

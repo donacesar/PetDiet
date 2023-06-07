@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FullOrder;
 use App\Models\SmallOrder;
 use Illuminate\Http\Request;
 
@@ -9,6 +10,11 @@ class SmallOrderController extends Controller
 {
     public function index()
     {
+
+        session([
+            'small_orders' => SmallOrder::where('finished', false)->count(),
+            'full_orders' => FullOrder::where('finished', false)->count()
+            ]);
 
         $small_orders = SmallOrder::where('finished', false)->get();
         return view('small_orders', compact(['small_orders']));

@@ -54,6 +54,10 @@
     text-align: center;
 }
 
+.opacity-50 {
+    opacity: 0.5;
+}
+
 .mobile {
     display: none;
 }

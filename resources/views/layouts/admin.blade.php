@@ -35,8 +35,17 @@
             <li class="nav-item dropdown">
                 <a  href="{{ route('small_order.index') }}" class="nav-link">
                     <i class="fas fas fa-phone-alt"></i>
-                    @if($count_small_orders != 0)
-                        <span class="badge badge-danger navbar-badge menu-badge">{{ $count_small_orders }}</span>
+                    @if(session('small_orders') != 0)
+                        <span class="badge badge-danger navbar-badge menu-badge">{{ session('small_orders') }}</span>
+                    @endif
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a  href="{{ route('full_order.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-file"></i>
+                    @if(session('full_orders') != 0)
+                        <span class="badge badge-danger navbar-badge menu-badge">{{ session('full_orders') }}</span>
                     @endif
                 </a>
             </li>
@@ -83,8 +92,8 @@
                             <i class="nav-icon fas fa-phone-alt"></i>
                             <p>
                                 Простая заявка
-                                @if($count_small_orders != 0)
-                                    <span class="badge badge-info right">{{ $count_small_orders }}</span>
+                                @if(session('small_orders') != 0)
+                                    <span class="badge badge-info right">{{ session('small_orders') }}</span>
                                 @endif
                             </p>
                         </a>
@@ -95,7 +104,7 @@
                             <i class="nav-icon fas fa-file"></i>
                             <p>
                                 Полная заявка
-                                <span class="badge badge-info right">2</span>
+                                <span class="badge badge-info right">{{ session('full_orders') }}</span>
                             </p>
                         </a>
                     </li>
