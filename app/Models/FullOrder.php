@@ -19,7 +19,7 @@ class FullOrder extends Model
         return $this->belongsTo(ConditionIndex::class, 'condition_index', 'category_id');
     }
 
-    public function activity() {
+    public function activity_table() {
         return $this->belongsTo(Activity::class, 'activity', 'category_id');
     }
 }

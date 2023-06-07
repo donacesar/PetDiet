@@ -46,7 +46,7 @@ Route::post('/full-form', [FullOrderController::class, 'create'])->name('full_fo
 
 Route::middleware('auth')->group(function(){
     Route::get('/full_orders', [FullOrderController::class, 'index'])->name('full_order.index');
-
+    Route::get('/full_order/{full_order}', [FullOrderController::class, 'show'])->name('full_order.show');
     Route::patch('/finish/{full_order}', [FullOrderController::class, 'finish'])->name('full_order.finish');
     Route::get('/finished_full_orders', [FullOrderController::class, 'finishIndex'])->name('finished_full_order.index');
     Route::delete('/full_order/{full_order}', [FullOrderController::class, 'delete'])->name('full_order.delete');

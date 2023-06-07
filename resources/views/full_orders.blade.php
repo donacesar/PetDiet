@@ -1,7 +1,4 @@
-@extends('layouts.admin', [
-    'title' => env('APP_NAME').' Админка - расширенные заявки',
-     'count_small_orders' => 23
-     ])
+@extends('layouts.admin', ['title' => env('APP_NAME').' Админка - расширенные заявки'])
 
 @section('header')
     Расширенные заявки
@@ -27,9 +24,10 @@
                 </thead>
                 <tbody>
                 @foreach($full_orders as $full_order)
+
                     <tr>
-                        <td>{{ $full_order->created_at->format('d/m/Y h:m:i') }}</td>
-                        <td>{{ $full_order->name }}</td>
+                        <td><a href="{{ route('full_order.show', $full_order) }}">{{ $full_order->created_at->format('d/m/Y h:m:i') }}</a></td>
+                        <td><a href="{{ route('full_order.show', $full_order) }}">{{ $full_order->name }}</a></td>
                         <td>
                             <a href="tel:{{ phoneFilter($full_order->phone) }}">{{ phoneFilter($full_order->phone) }}</a>
                         </td>
@@ -53,7 +51,8 @@
                                 <form action="{{ route('full_order.finish', $full_order->id) }}" method="post">
                                     @csrf
                                     @method('patch')
-                                    <button class="button-finish" type="submit"><i class="fas fa-check"></i></button>
+                                    <button class="button-finish" type="submit"><i class="fas fa-check"></i>
+                                    </button>
                                 </form>
                             @else
                                 <i class="fas fa-flag-checkered"></i>
@@ -63,10 +62,12 @@
                             <form action="{{ route('full_order.delete', $full_order) }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button class="button-finish" type="submit"><i class="far fa-trash-alt"></i></button>
+                                <button class="button-finish" type="submit"><i class="far fa-trash-alt"></i>
+                                </button>
                             </form>
                         </td>
                     </tr>
+
                 @endforeach
                 </tbody>
             </table>

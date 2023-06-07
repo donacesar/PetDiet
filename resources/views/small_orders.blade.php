@@ -1,7 +1,4 @@
-@extends('layouts.admin', [
-    'title' => env('APP_NAME').' Админка - простые заявки',
-     'count_small_orders' => count($small_orders)
-     ])
+@extends('layouts.admin', ['title' => env('APP_NAME').' Админка - простые заявки'])
 
 @section('header')
     Простые заявки

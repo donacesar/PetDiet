@@ -16,8 +16,10 @@ class FullOrderController extends Controller
         ]);
         $full_orders = FullOrder::where('finished', false)->get();
         return view('full_orders', compact(['full_orders']));
+    }
 
-
+    public function show(FullOrder $full_order) {
+        return view('full_order', compact(['full_order']));
     }
 
     public function form()
@@ -33,9 +35,9 @@ class FullOrderController extends Controller
         return redirect(route('success_message'));
     }
 
-    public function finish(FullOrder $fullOrder)
+    public function finish(FullOrder $full_order)
     {
-        $fullOrder->update(['finished' => true]);
+        $full_order->update(['finished' => true]);
         return redirect()->route('full_order.index');
     }
 
@@ -46,9 +48,9 @@ class FullOrderController extends Controller
         return view('finished_full_orders', compact(['full_orders', 'finished_full_orders']));
     }
 
-    public function delete(FullOrder $fullOrder)
+    public function delete(FullOrder $full_order)
     {
-        $fullOrder->delete();
+        $full_order->delete();
         return redirect()->back();
     }
 

@@ -17,6 +17,8 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+
+    @yield('head+')
 </head>
 <body class="hold-transition sidebar-mini" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">
 <div class="wrapper wrapper-custom">
