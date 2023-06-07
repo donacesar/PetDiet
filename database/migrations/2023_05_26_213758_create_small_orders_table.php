@@ -17,6 +17,9 @@ return new class extends Migration {
             $table->string('phone');
             $table->string('email');
             $table->unsignedBigInteger('favorite_connection');
+            $table->string('pet_name');
+            $table->unsignedBigInteger('pet_sex');
+            $table->date('age');
             $table->unsignedBigInteger('service');
             $table->timestamps();
 

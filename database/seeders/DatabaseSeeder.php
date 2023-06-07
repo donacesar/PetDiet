@@ -19,7 +19,10 @@ class DatabaseSeeder extends Seeder
              FavoriteConnectionSeeder::class,
              PetSexSeeder::class,
              ServiceSeeder::class,
-             SmallOrderSeeder::class
+             SmallOrderSeeder::class,
+             ConditionIndexSeeder::class,
+             ActivitySeeder::class,
+             FullOrderSeeder::class,
          ]);
 
 

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\SmallOrder;
 use Illuminate\Http\Request;
-use PHPUnit\Framework\TestSize\Small;
 
 class SmallOrderController extends Controller
 {

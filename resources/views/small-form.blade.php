@@ -147,7 +147,6 @@
                     <div class="t-col t-col_8 t-prefix_2">
                         <div>
                             <form action='{{ route('small_form.create') }}' method='POST'>
-
                                 @csrf
 
                                 <div class="t-form__inputsbox">
@@ -263,6 +262,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="finished" value="0">
                                     <div class="t-form__submit">
                                         <button type="submit" class="t-submit"
                                                 style="color:#2a2122;background-color:#b39883;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;">
