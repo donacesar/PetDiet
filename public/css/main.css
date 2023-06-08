@@ -147,6 +147,7 @@
     font-feature-settings: normal;
     font-size: 16px;
     font-weight: 400;
+    color: rgba(0, 0, 0, 0.63);
 }
 
 @media screen and (max-width: 980px) {
