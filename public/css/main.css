@@ -138,6 +138,17 @@
     transition: 0.5s;
 }
 
+.admin-footer {
+    padding: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.44);
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 980px) {
     .some-place2 {
         display: none;

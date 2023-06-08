@@ -12,17 +12,13 @@
 
     <!--allrecords-->
     <div class="t-records">
-
         <div id="rec427542532" class="r t-rec t-rec_pt_150 t-rec_pb_150"
              style="padding-left:15px;padding-top:20px;padding-bottom:20px;background-color:#f2f2f0; ">
             <!-- t678 -->
             <div class="t678 t-input_nomargin">
-
                 <div class="t-container">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div>
-
-
                             <div class="t-form__inputsbox">
                                 <div class="t-input-group t-input-group_nm">
                                     <div class="t-input-title t-descr t-descr_md">

@@ -191,7 +191,7 @@
     <!-- /.content-wrapper -->
 
     <!-- Main Footer -->
-    <footer class="main-footer">
+    <footer class="admin-footer">
         <!-- Copyright -->
         <div class="">
             © 2022-{{date('Y')}} Copyright:
