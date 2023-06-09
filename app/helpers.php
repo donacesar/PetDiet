@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\TelegramBot;
+use GuzzleHttp\Client;
 use Illuminate\Support\Carbon;
 
 function birthdayFilter($date): string
@@ -33,4 +35,10 @@ function phoneFilter($phone_number): array|string|int
 
 }
 
+function sendMessage($message)
+{
+    $client = new Client(['base_uri' => 'https://api.telegram.org']);
+    $telegram_bot = TelegramBot::all()->first();
+    return $client->request('GET', '/bot' . $telegram_bot->token . '/sendMessage?chat_id=' . $telegram_bot->chat_id . '&text=' . $message);
+}
 
