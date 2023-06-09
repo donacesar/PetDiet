@@ -150,6 +150,19 @@
     color: rgba(0, 0, 0, 0.63);
 }
 
+.code-style {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.focus-style {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
 @media screen and (max-width: 980px) {
     .some-place2 {
         display: none;

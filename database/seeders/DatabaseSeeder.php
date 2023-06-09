@@ -3,8 +3,6 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\FavoriteConnection;
-use App\Models\PetSex;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +21,7 @@ class DatabaseSeeder extends Seeder
              ConditionIndexSeeder::class,
              ActivitySeeder::class,
              FullOrderSeeder::class,
+             TelegramBotSeeder::class,
          ]);
 
 

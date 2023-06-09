@@ -29,7 +29,6 @@ class FullOrderController extends Controller
 
     public function create(Request $request)
     {
-        dd($request->all());
         FullOrder::create($request->all());
 
         return redirect(route('success_message'));

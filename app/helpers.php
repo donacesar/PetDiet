@@ -7,7 +7,7 @@ function birthdayFilter($date): string
     $date = Carbon::parse($date->age);
     $days = $date->diffInDays();
 
-    return (string)round($days/365, 2);
+    return (string)round($days / 365, 2);
 }
 
 function favorite_connectionFilter($favorite_connection): string
@@ -25,10 +25,12 @@ function phoneFilter($phone_number): array|string|int
 {
     $clear_number = str_replace([' ', '-', '(', ')', '+'], '', $phone_number);
 
-   return match (strlen($clear_number)) {
-       10 => '+7' . $clear_number,
-       11 =>'+' . $clear_number,
-       default => $clear_number,
-   };
+    return match (strlen($clear_number)) {
+        10 => '+7' . $clear_number,
+        11 => '+' . $clear_number,
+        default => $clear_number,
+    };
 
 }
+
+

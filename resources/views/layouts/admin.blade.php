@@ -137,7 +137,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="{{ route('telegram_bot.index') }}" class="nav-link">
                             <i class="nav-icon fab fa-telegram-plane"></i>
                             <p>Настройка бота</p>
                         </a>

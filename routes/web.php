@@ -50,9 +50,12 @@ Route::middleware('auth')->group(function(){
     Route::patch('/finish/{full_order}', [FullOrderController::class, 'finish'])->name('full_order.finish');
     Route::get('/finished_full_orders', [FullOrderController::class, 'finishIndex'])->name('finished_full_order.index');
     Route::delete('/full_order/{full_order}', [FullOrderController::class, 'delete'])->name('full_order.delete');
+
+    Route::get('/telegram_bot', [\App\Http\Controllers\TelegramBotController::class, 'index'])->name('telegram_bot.index');
+    Route::patch('/telegram_bot', [\App\Http\Controllers\TelegramBotController::class, 'update'])->name('telegram_bot.update');
+    Route::get('/bot_success_message', function () { return view('bot_success_message'); })->name('bot_success_message');
+    Route::post('/send_message', [\App\Http\Controllers\TelegramBotController::class, 'sendMessage'])->name('send_message');
 });
-
-
 
 
 
