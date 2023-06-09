@@ -31,6 +31,10 @@ class FullOrderController extends Controller
     {
         FullOrder::create($request->all());
 
+        $order = $request->all();
+        $message = "Расширенная заявка: \n" . $order['name'] . "\n" . $order['phone'] . "\n" . $order['email'];
+        sendMessage($message);
+
         return redirect(route('success_message'));
     }
 
