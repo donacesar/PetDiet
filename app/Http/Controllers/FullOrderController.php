@@ -56,5 +56,4 @@ class FullOrderController extends Controller
         return redirect()->back();
     }
 
-
 }

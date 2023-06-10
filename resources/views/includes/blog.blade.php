@@ -1,6 +1,6 @@
 {{-- Blog --}}
 <div class="some-place2"></div>
-<div id="rec279567382" class="r t-rec t-rec_pt_60 t-rec_pb_45" style="padding-top:60px;padding-bottom:45px;background-color:#b39883; " data-animationappear="off" data-record-type="829" data-bg-color="#b39883">
+<div id="rec279567382" class="r t-rec t-rec_pt_60 t-rec_pb_45" style="padding-top:60px;padding-bottom:45px;background-color:#39352c; " data-animationappear="off" data-record-type="829" data-bg-color="#b39883">
     <!-- t829 -->
     <div class="t829">
         <div class="t-section__container t-container">
@@ -8,7 +8,7 @@
                 <div class="t-section__topwrapper t-align_center">
                     <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">
                         <div style="font-size: 28px;" data-customstyle="yes">
-                            <strong style="color: rgb(10, 33, 34);">
+                            <strong style="color: rgba(194,249,250,0.88);">
                                 Полезные статьи:<span class="ql-cursor"></span>
                             </strong>
                         </div>
@@ -16,13 +16,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="card">
+            <div class="foto"></div>
+            <div class=""></div>
+            <div class="button-finish"></div>
+        </div>
+
         <div class="t829__container t829__container_padd-column t-container">
             <div class="t829__grid">
                 <div class="t829__grid-sizer" style="width: 400px;"></div>
                 <div class="t829__gutter-sizer t829__gutter-sizer_40"></div>
-                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12" style="width: 400px;">
-                    <div class="t829__content-wrapper" style="background-color:#f2f2f0">
-                        <div class="t829__content">
+                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 block-shadow" style="width: 400px;">
+                    <div class="t829__content-wrapper block-shadow" style="background-color:#f2f2f0; border: 1px solid transparent; border-radius: 16px;">
+                        <div class="t829__content ">
                             <div class="t829__imgwrapper">
                                 <img src="https://static.tildacdn.info/tild3931-3634-4661-b461-623536623862/-/empty/noroot.png" data-original="https://static.tildacdn.info/tild3931-3634-4661-b461-623536623862/noroot.png" class="t829__img t-img js-product-img" imgfield="li_img__1521103691910"/>
                             </div>
@@ -34,7 +41,7 @@
                             </div>
                         </div>
                         <div class="t829__btnwrapper t829__btnwrapper_padd">
-                            <a href="" rel="nofollow" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#2a2122;border:2px solid #2a2122;background-color:#c0c88c;">
+                            <a href="" rel="nofollow" class="button-read t829__btn t829__btn t-btn t-btn_xs" style="color:#2a2122;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
                                         <td>Читать</td>
@@ -44,8 +51,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 " style="width: 400px;">
-                    <div class="t829__content-wrapper" style="background-color:#f2f2f0">
+                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 block-shadow " style="width: 400px;">
+                    <div class="t829__content-wrapper" style="background-color:#f2f2f0; border: 1px solid transparent; border-radius: 16px;">
                         <div class="t829__content">
                             <div class="t829__imgwrapper">
                                 <img src="https://static.tildacdn.info/tild6438-3837-4537-a366-363539656238/-/empty/IMG-20190901-WA0008.jpg" data-original="https://static.tildacdn.info/tild6438-3837-4537-a366-363539656238/IMG-20190901-WA0008.jpg" class="t829__img t-img js-product-img" imgfield="li_img__1520419830673"/>
@@ -56,7 +63,7 @@
                             </div>
                         </div>
                         <div class="t829__btnwrapper t829__btnwrapper_padd">
-                            <a href="" rel="nofollow" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#2a2122;border:2px solid #2a2122;background-color:#c0c88c;">
+                            <a href="" rel="nofollow" class="button-read t829__btn t829__btn t-btn t-btn_xs" style="color:#0e0b0b;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
                                         <td>Читать</td>
@@ -66,8 +73,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 " style="width: 400px;">
-                    <div class="t829__content-wrapper" style="background-color:#f2f2f0">
+                <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 block-shadow" style="width: 400px;">
+                    <div class="t829__content-wrapper" style="background-color:#f2f2f0; border: 1px solid transparent; border-radius: 16px;">
                         <div class="t829__content">
                             <div class="t829__imgwrapper">
                                 <img src="https://static.tildacdn.info/tild6237-3361-4365-b135-616339323661/-/empty/1576266021135.jpg" data-original="https://static.tildacdn.info/tild6237-3361-4365-b135-616339323661/1576266021135.jpg" class="t829__img t-img js-product-img" imgfield="li_img__1520419895308"/>
@@ -78,7 +85,7 @@
                             </div>
                         </div>
                         <div class="t829__btnwrapper t829__btnwrapper_padd">
-                            <a href="" rel="nofollow" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#2a2122;border:2px solid #2a2122;background-color:#c0c88c;">
+                            <a href="" rel="nofollow" class="button-read t-btn t-btn_xs" style="color:#2a2122;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
                                         <td>Читать</td>

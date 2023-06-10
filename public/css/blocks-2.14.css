@@ -237,7 +237,7 @@
 .t-descr_xxxl {
     font-size: 30px;
     line-height: 1.45;
-    letter-spacing: .45
+    letter-spacing: .45;
 }
 
 .t-uptitle {
@@ -3470,10 +3470,13 @@ img:not([src]) {
 .t829__imgwrapper {
     position: relative;
     width: 100%;
-    background-color: #ececec
+    background-color: #ececec;
+    border-radius: 16px;
 }
 
 .t829__img {
+    border-top: 1px solid transparent;
+    border-radius: 16px;
     max-width: 100%;
     width: 100%;
     z-index: 2;
