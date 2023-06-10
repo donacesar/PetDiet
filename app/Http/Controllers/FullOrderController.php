@@ -18,7 +18,8 @@ class FullOrderController extends Controller
         return view('full_orders', compact(['full_orders']));
     }
 
-    public function show(FullOrder $full_order) {
+    public function show(FullOrder $full_order)
+    {
         return view('full_order', compact(['full_order']));
     }
 
@@ -29,10 +30,19 @@ class FullOrderController extends Controller
 
     public function create(Request $request)
     {
-        FullOrder::create($request->all());
+        $order = FullOrder::create($request->all());
 
-        $order = $request->all();
-        $message = "Расширенная заявка: \n" . $order['name'] . "\n" . $order['phone'] . "\n" . $order['email'];
+        $phone = $order->favorite_phone == 1 ? "телефон\n" : "";
+        $email = $order->favorite_email == 1 ? "email\n" : "";
+        $whatsapp = $order->favorite_whatsapp == 1 ? "whatsapp\n" : "";
+        $telegram = $order->favorite_telegram == 1 ? "telegram\n" : "";
+
+        $message = "Расширенная заявка: \n"
+        . $order->name . "\n"
+        . $order->phone . "\n"
+        . $order->email . "\n"
+        . "Связь: " . $phone . $email. $whatsapp . $telegram ;
+
         sendMessage($message);
 
         return redirect(route('success_message'));
