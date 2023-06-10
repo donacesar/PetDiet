@@ -15,10 +15,6 @@ class SmallOrder extends Model
         return $this->belongsTo(FavoriteConnection::class, 'favorite_connection', 'category_id');
     }
 
-    public function petSex() {
-        return $this->belongsTo(PetSex::class, 'pet_sex', 'category_id');
-    }
-
     public function orderService() {
         return $this->belongsTo(Service::class, 'service', 'category_id');
     }

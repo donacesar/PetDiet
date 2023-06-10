@@ -29,9 +29,13 @@ class SmallOrderController extends Controller
 
     public function create(Request $request)
     {
-        SmallOrder::create($request->all());
-        $order = $request->all();
-        $message = "Малая заявка: \n" . $order['name'] . "\n" . $order['phone'] . "\n" . $order['email'];
+        $order = SmallOrder::create($request->all());
+
+
+        $message = "Малая заявка: \n"
+            . $order->name . "\n" . $order->phone . "\n"
+            . $order->email . "\nСвязь: " . $order->favoriteConnection->category
+        . "\n" . $order->orderService->category;
         sendMessage($message);
 
         return redirect(route('success_message'));
