@@ -29,7 +29,7 @@
                         <td>{{ $small_order->created_at->format('d/m/Y h:m:i') }}</td>
                         <td>{{ $small_order->name }}</td>
                         <td>
-                            <a href="tel:{{ phoneFilter($small_order->phone) }}">{{ phoneFilter($small_order->phone) }}</a>
+                            <a href="tel:+{{ phoneFilter($small_order->phone) }}">+{{ phoneFilter($small_order->phone) }}</a>
                         </td>
                         <td>{{ $small_order->email }}</td>
                         <td class="al-center">{!! favorite_connectionFilter($small_order->favorite_connection) !!}</td>
@@ -81,7 +81,7 @@
                     <tr class="mobile">
                         <td class="mobile-td">Телефон</td>
                         <td>
-                            <a href="tel:{{ phoneFilter($small_order->phone) }}">{{ phoneFilter($small_order->phone) }}</a>
+                            <a href="tel:+{{ phoneFilter($small_order->phone) }}">+{{ phoneFilter($small_order->phone) }}</a>
                         </td>
                     </tr>
                     <tr class="mobile">

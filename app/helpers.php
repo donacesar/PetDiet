@@ -28,17 +28,21 @@ function phoneFilter($phone_number): array|string|int
     $clear_number = str_replace([' ', '-', '(', ')', '+'], '', $phone_number);
 
     return match (strlen($clear_number)) {
-        10 => '+7' . $clear_number,
-        11 => '+' . $clear_number,
+        10 => '7' . $clear_number,
         default => $clear_number,
     };
 
+}
+
+function clearPhone($number)
+{
+    return str_replace([' ', '+', '-', '(', ')'], '', $number);
 }
 
 function sendMessage($message)
 {
     $client = new Client(['base_uri' => 'https://api.telegram.org']);
     $telegram_bot = TelegramBot::all()->first();
-    return $client->request('GET', '/bot' . $telegram_bot->token . '/sendMessage?chat_id=' . $telegram_bot->chat_id . '&text=' . $message);
+    return $client->request('GET', '/bot' . $telegram_bot->token . '/sendMessage?chat_id=' . $telegram_bot->chat_id . '&text=' . $message . '&parse_mode=Markdown&disable_web_page_preview=True');
 }
 

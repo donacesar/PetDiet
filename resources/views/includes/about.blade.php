@@ -2,11 +2,11 @@
     <!-- T677 -->
     <div class="t677">
         <div class="t-container t-container_flex">
-            <div class="t677__col t-col t-col_5 ">
-                <div class="t677__row t677__row_1-image">
-                    <div class="t677__tile t677__tile_left" itemscope itemtype="http://schema.org/ImageObject">
+            <div class="t677__col t-col t-col_5 " >
+                <div class="t677__row t677__row_1-image" style="border: 1px solid rgba(0,0,0,0); border-radius: 10px;">
+                    <div class="t677__tile t677__tile_left" style="border: 2px solid rgba(33,15,15,0.2); border-radius: 10px; box-shadow:4px 5px 6px 3px rgba(0, 0, 0, 0.1);">
                         <meta itemprop="image" content="{{ asset('img/about.png') }}">
-                        <div class="t677__bgimg t677__bgimg_1 t-bgimg" data-original="{{ asset('img/about.png') }}" style="background-image:url('https://static.tildacdn.info/tild6233-6137-4765-b330-653264326334/-/resizeb/20x/noroot.png'); box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.0);"></div>
+                        <div class="t677__bgimg t677__bgimg_1 t-bgimg" data-original="{{ asset('img/about.png') }}"></div>
                     </div>
                 </div>
             </div>

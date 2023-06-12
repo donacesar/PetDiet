@@ -28,6 +28,10 @@ Route::middleware('auth')->group(function () {
 
 });
 
+Route::get('/phone_call/{number}', function ($number) {
+    return redirect('tel: +' . $number);
+})->name('phone_call');
+
 Route::get('/small-form', [SmallOrderController::class, 'form'])->name('small_form.form');
 Route::post('/small-form', [SmallOrderController::class, 'create'])->name('small_form.create');
 Route::get('/success_message', function () { return view('success_message'); })->name('success_message');

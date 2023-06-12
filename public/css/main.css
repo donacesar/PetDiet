@@ -45,17 +45,17 @@
     box-shadow: 0px 0px 20px 0px rgba(10, 19, 23, 0.97);
 }
 .button-read {
-    background-color: rgb(187, 173, 96);
+    transition: 0.4s;
+    background-color: rgba(57, 53, 44, 0.8);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.2);
+    box-shadow:2px 2px 6px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    box-shadow: inset 0px 0px 4px 1px rgba(255, 255, 255, 0.7);
 }
 
 .button-read:hover {
-    transition: 0.8s;
-    background-color: rgba(238, 227, 134, 0.78);
-    -webkit-box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.2);
-    box-shadow:inset 0px 0px 4px 1px rgba(34, 60, 80, 0.2);
+    background-color: rgba(95, 87, 47, 0.8);
+    border-radius: 4px;
 }
 
 .desktop {

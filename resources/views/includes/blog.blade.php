@@ -8,7 +8,7 @@
                 <div class="t-section__topwrapper t-align_center">
                     <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">
                         <div style="font-size: 28px;" data-customstyle="yes">
-                            <strong style="color: rgba(194,249,250,0.88);">
+                            <strong style="color: rgba(255,255,255,0.88);text-shadow: 4px 2px 4px rgba(0,0,0,0.8);">
                                 Полезные статьи:<span class="ql-cursor"></span>
                             </strong>
                         </div>
@@ -44,7 +44,7 @@
                             <a href="" rel="nofollow" class="button-read t829__btn t829__btn t-btn t-btn_xs" style="color:#2a2122;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
-                                        <td>Читать</td>
+                                        <td style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);" style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);">Читать</td>
                                     </tr>
                                 </table>
                             </a>
@@ -66,7 +66,7 @@
                             <a href="" rel="nofollow" class="button-read t829__btn t829__btn t-btn t-btn_xs" style="color:#0e0b0b;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
-                                        <td>Читать</td>
+                                        <td style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);">Читать</td>
                                     </tr>
                                 </table>
                             </a>
@@ -88,7 +88,7 @@
                             <a href="" rel="nofollow" class="button-read t-btn t-btn_xs" style="color:#2a2122;border:1px solid rgba(42,33,34,0.29);">
                                 <table style="width:100%; height:100%;">
                                     <tr>
-                                        <td>Читать</td>
+                                        <td style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);">Читать</td>
                                     </tr>
                                 </table>
                             </a>
