@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/phone_call/{number}', function ($number) {
-    return redirect('tel: +' . $number);
+    return redirect('tel:+' . $number);
 })->name('phone_call');
 
 Route::get('/small-form', [SmallOrderController::class, 'form'])->name('small_form.form');
