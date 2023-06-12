@@ -104,9 +104,6 @@
                                     @csrf
                                     @method('patch')
                                     <button class="button-finish" type="submit"><i class="fas fa-check"></i></button>
-                                    <style>
-
-                                    </style>
                                 </form>
                             @else
                                 <i class="fas fa-flag-checkered"></i>

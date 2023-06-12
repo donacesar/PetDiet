@@ -43,7 +43,8 @@ class SmallOrderController extends Controller
         $message = "Малая заявка: \n_"
             . $order->name . "_\n"
             . "[%2b$order->phone](" . route('phone_call', $order->phone) . ")" . "\n"
-            . $order->email . "\n"
+            . $order->email . "\n_"
+            . $order->orderService->category . "_\n"
             . $connection;
         sendMessage($message);
 

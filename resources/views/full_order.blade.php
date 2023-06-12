@@ -112,9 +112,8 @@
 
                                 </div>
                                 <div class="t-input-group t-input-group_in">
-                                    <div class="t-input-title t-descr t-descr_md"
-                                         style="color:#2a2122;font-weight:600;">
-                                        <span>В каком возрасте была стерилизация: </span>
+                                    <div class="t-input-title t-descr t-descr_md">
+                                        <span style="color:#2a2122;font-weight:600;">В каком возрасте была стерилизация: </span>
                                         {{ $full_order->sterilized }}
                                     </div>
                                 </div>
@@ -152,7 +151,7 @@
                                     <div class="t-input-title t-descr t-descr_md">
                                         <span
                                             style="color:#2a2122;font-weight:600;">Описание ежедневной активности:</span>
-                                        {{ $full_order->daily_active }}
+                                        {{ $full_order->daily_activity }}
                                     </div>
                                 </div>
                                 <div class="t-input-group t-input-group_in">
@@ -183,7 +182,7 @@
                                 <div class="t-input-group t-input-group_in">
                                     <div class="t-input-title t-descr t-descr_md">
                                         <span style="color:#2a2122;font-weight:600;">Питается ли ваш питомец в присутствии других животных:</span>
-                                        {{ $full_order->food_whis_other }}
+                                        {{ $full_order->food_with_other }}
                                     </div>
                                 </div>
                                 <div class="t-input-group t-input-group_in">

@@ -30,18 +30,19 @@ class FullOrderController extends Controller
 
     public function create(Request $request)
     {
+        $request->offsetSet('phone', phoneFilter($request->phone));
         $order = FullOrder::create($request->all());
 
-        $phone = $order->favorite_phone == 1 ? "телефон\n" : "";
-        $email = $order->favorite_email == 1 ? "email\n" : "";
-        $whatsapp = $order->favorite_whatsapp == 1 ? "whatsapp\n" : "";
-        $telegram = $order->favorite_telegram == 1 ? "telegram\n" : "";
+        $phone = $order->favorite_phone == 1 ? "по телефону\n" : "";
+        $email = $order->favorite_email == 1 ? "по email\n" : "";
+        $whatsapp = $order->favorite_whatsapp == 1 ? "по [whatsapp](https://wa.me/" . clearPhone($order->phone) . ")\n" : "";
+        $telegram = $order->favorite_telegram == 1 ? "по [telegram](https://t.me/%2b" . clearPhone($order->phone) . ")\n" : "";
 
-        $message = "Расширенная заявка: \n"
-        . $order->name . "\n"
-        . $order->phone . "\n"
+        $message = "[Расширенная заявка: №$order->id](" . route('full_order.show', $order) .")\n_"
+        . $order->name . "_\n"
+        . "[%2b$order->phone](" . route('phone_call', $order->phone) . ")" . "\n"
         . $order->email . "\n"
-        . "Связь: " . $phone . $email. $whatsapp . $telegram ;
+        . "Связь: \n" . $phone . $email . $whatsapp . $telegram;
 
         sendMessage($message);
 
