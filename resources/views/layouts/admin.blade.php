@@ -135,7 +135,12 @@
 
                         </ul>
                     </li>
-
+                    <li class="nav-item">
+                        <a href="{{ route('admin_blog.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-blog"></i>
+                            <p>Блог</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="{{ route('telegram_bot.index') }}" class="nav-link">
                             <i class="nav-icon fab fa-telegram-plane"></i>

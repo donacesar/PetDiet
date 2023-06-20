@@ -71,11 +71,11 @@
                 <table class="table table-hover text-nowrap">
                     <thead>
                     <tr class="mobile">
-                        <td class="mobile-td" class="mobile">Время</td>
+                        <td class="mobile-td" >Время</td>
                         <td>{{ $small_order->created_at->format('d/m/Y h:m:i') }}</td>
                     </tr>
                     <tr class="mobile">
-                        <td class="mobile-td" class="mobile">Имя</td>
+                        <td class="mobile-td">Имя</td>
                         <td>{{ $small_order->name }}</td>
                     </tr>
                     <tr class="mobile">

@@ -59,6 +59,11 @@ Route::middleware('auth')->group(function(){
     Route::patch('/telegram_bot', [\App\Http\Controllers\TelegramBotController::class, 'update'])->name('telegram_bot.update');
     Route::get('/bot_success_message', function () { return view('bot_success_message'); })->name('bot_success_message');
     Route::post('/send_message', [\App\Http\Controllers\TelegramBotController::class, 'sendMessage'])->name('send_message');
+
+    Route::get('/admin_blog', [\App\Http\Controllers\BlogController::class, 'adminIndex'])->name('admin_blog.index');
+    Route::get('/new_post', [\App\Http\Controllers\BlogController::class, 'form'])->name('blog_form');
+    Route::post('/new_post', [\App\Http\Controllers\BlogController::class, 'create'])->name('post.create');
+    Route::delete('/delete/{blog}', [\App\Http\Controllers\BlogController::class, 'delete'])->name('blog.delete');
 });
 
 
