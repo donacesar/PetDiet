@@ -1,20 +1,15 @@
 @extends('layouts.main-layout', ['title' => env('APP_NAME') . ' - Пост №' . $post->id ])
 @section('content')
     <div class="some-place2"></div>
-    <div id="rec279567382" class="r t-rec t-rec_pt_60 t-rec_pb_45"
+    <div id="" class="r t-rec t-rec_pt_60 t-rec_pb_45"
          style="padding-top:60px;padding-bottom:45px;background-color:#39352c; " data-animationappear="off"
          data-record-type="829" data-bg-color="#b39883">
         <!-- t829 -->
-        <div class="t829">
+        <div class="">
 
-            <div class="t829__container t829__container_padd-column t-container">
-                <div class="t829__grid">
-                    <div class="t829__grid-sizer"></div>
-                    <div class="t829__gutter-sizer t829__gutter-sizer_40"></div>
-
-                    <div
-                        class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 block-shadow"
-                        style="width: 400px;">
+            <div class="t829__container t829__container_padd-column t-container blog_post">
+                <div class="">
+                    <div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 block-shadow blog_post">
                         <div class="t829__content-wrapper block-shadow"
                              style="background-color:#f2f2f0; border: 1px solid transparent; border-radius: 16px;">
                             <div class="t829__content ">
@@ -40,7 +35,7 @@
                                     <table style="width:100%; height:100%;">
                                         <tr>
                                             <td style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);"
-                                                style="color: white; text-shadow: 0px 0px 3px rgba(0,0,0,0.84);">Назад</td>
+                                                >Назад</td>
                                         </tr>
                                     </table>
                                 </a>
@@ -51,6 +46,13 @@
                 </div>
             </div>
         </div>
+        <script>
+            t_onReady(function () {
+                t_onFuncLoad('t829_init', function () {
+                    t829_init('279567382');
+                });
+            });
+        </script>
     </div>
 
 @endsection

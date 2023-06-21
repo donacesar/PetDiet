@@ -99,6 +99,11 @@
     box-shadow:  10px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+.blog_post {
+    width: 800px;
+    justify-content: center;
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -117,8 +122,13 @@
         font-size: 1.2em;
         padding-top: 10px;
     }
+    .blog_post {
+        width: 360px;
+    }
 
 }
+
+
 
 
 
