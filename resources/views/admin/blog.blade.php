@@ -30,14 +30,15 @@
                             <td class="align-middle"><img src="{{ asset('/storage/' . $post->image_url) }}" width="25px"
                                      alt="картинка поста"></td>
                             <td class="align-middle">
-                                <form action="#" method="post">
+                                <form action="{{ route('post.edit', $post) }}" method="post">
+                                    @csrf
                                     <button class="button-finish" type="submit">
                                         <i class="nav-icon fas fa-edit"></i>
                                     </button>
                                 </form>
                             </td>
                             <td class="align-middle">
-                                <form action="{{ route('blog.delete', $post) }}" method="post">
+                                <form action="{{ route('post.delete', $post) }}" method="post">
                                     @csrf
                                     @method('delete')
                                     <button class="button-finish" type="submit"><i class="far fa-trash-alt"></i>

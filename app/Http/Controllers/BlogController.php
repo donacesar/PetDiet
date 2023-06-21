@@ -26,12 +26,31 @@ class BlogController extends Controller
         return redirect()->route('admin_blog.index');
     }
 
-    public function delete(Blog $blog)
+    public function delete(Blog $post)
     {
-
-        Storage::disk('public')->delete($blog->image_url);
-        $blog->delete();
+        Storage::disk('public')->delete($post->image_url);
+        $post->delete();
         return redirect()->back();
     }
+
+    public function edit(Blog $post)
+    {
+        return view('admin.blog_edit', compact('post'));
+    }
+
+    public function update(Request $request, Blog $post)
+    {
+        if ($request->hasFile('image')) {
+            Storage::disk('public')->delete($post->image_url);
+
+            $request['image_url'] = $request->file('image')->store('uploads', 'public');
+            $post->update($request->except(['image']));
+        } else {
+            $post->update($request->all());
+        }
+
+        return redirect()->route('admin_blog.index');
+    }
+
 
 }
