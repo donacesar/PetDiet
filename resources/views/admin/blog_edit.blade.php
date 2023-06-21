@@ -11,10 +11,9 @@
             @csrf
             @method('patch')
             <div class="form-group">
-                <label for="title">Название поста</label>
-                <input class="form-control" type="text" id="title" name="title" placeholder="Название поста..." value="{{
-    $post->title
-}}" required>
+                <label for="title">Название поста, заголовок</label>
+                <input class="form-control" type="text" id="title" name="title" placeholder="Название поста..."
+                       value="{{ $post->title }}" required>
             </div>
 
             <div class="post-edit">
@@ -30,12 +29,14 @@
 
             <div class="form-group">
                 <label for="description">Краткое описание</label>
-                <input class="form-control" type="text" id="description" name="description" placeholder="Краткое описание..."  value="{{ $post->description }}" required>
+                <input class="form-control" type="text" id="description" name="description"
+                       placeholder="Краткое описание..." value="{{ $post->description }}" required>
             </div>
 
             <div class="form-group">
                 <label for="content">Основной текст</label>
-                <textarea  class="form-control" name="content" id="content" cols="30" rows=7 required>{{ $post->content }}</textarea>
+                <textarea class="form-control" name="content" id="content" cols="30" rows=7
+                          required>{{ $post->content }}</textarea>
             </div>
 
             <div class="form-group">

@@ -10,7 +10,7 @@
         <form action="{{ route('post.create') }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="title">Название поста</label>
+                <label for="title">Название поста, заголовок</label>
                 <input class="form-control" type="text" id="title" name="title" placeholder="Название поста..." required>
             </div>
 

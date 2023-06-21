@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Route;
 
 // Страницы пользователя
 
-Route::get('/', function () { return view('index'); })->name('index');
-Route::get('/blog', function () { return view('blog'); })->name('blog');
+Route::get('/', [ \App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog');
+Route::get('/post_show/{post}', [\App\Http\Controllers\BlogController::class, 'show'])->name('post.show');
 Route::get('/small-form', [SmallOrderController::class, 'form'])->name('small_form.form');
 Route::post('/small-form', [SmallOrderController::class, 'create'])->name('small_form.create');
 Route::get('/full-form', function () { return view('full-form'); });

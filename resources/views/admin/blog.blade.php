@@ -58,7 +58,7 @@
     </div>
 
     @foreach($posts as $post)
-        <div class="card moblie">
+        <div class="card mobile">
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0">
                 <table class="table table-hover text-nowrap">
@@ -83,7 +83,8 @@
 
                     <tr class="mobile">
                         <td>
-                            <form action="#" method="post">
+                            <form action="{{ route('post.edit', $post) }}" method="post">
+                                @csrf
                                 <button class="button-finish" type="submit">
                                     <i class="nav-icon fas fa-edit"></i>
                                 </button>
@@ -92,7 +93,7 @@
                     </tr>
                     <tr class="mobile">
                         <td>
-                            <form action="№" method="post">
+                            <form action="{{ route('post.delete', $post) }}" method="post">
                                 @csrf
                                 @method('delete')
                                 <button class="button-finish" type="submit"><i class="far fa-trash-alt"></i>

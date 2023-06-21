@@ -14,6 +14,12 @@ class BlogController extends Controller
         return view('admin.blog', compact('posts'));
     }
 
+    public function index()
+    {
+        $posts = Blog::all();
+        return view('blog', compact('posts'));
+    }
+
     public function form()
     {
         return view('admin.blog_form');
@@ -52,5 +58,8 @@ class BlogController extends Controller
         return redirect()->route('admin_blog.index');
     }
 
-
+    public function show(Blog $post)
+    {
+        return view('post_show', compact('post'));
+    }
 }
