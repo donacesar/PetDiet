@@ -19,8 +19,8 @@
                     <th>Email</th>
                     <th>Связь</th>
                     <th>Услуга</th>
-                    <th>Завершить</th>
-                    <th>Удалить</th>
+                    <th class="al-center">Завершить</th>
+                    <th class="al-center">Удалить</th>
                 </tr>
                 </thead>
                 <tbody>

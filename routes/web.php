@@ -48,13 +48,13 @@ Route::middleware('auth')->group(function () {
     // Админка
 
     Route::get('/small_orders', [SmallOrderController::class, 'index'])->name('small_order.index');
-    Route::patch('/finish/{small_order}', [SmallOrderController::class, 'finish'])->name('small_order.finish');
+    Route::patch('/finish/small_order/{small_order}', [SmallOrderController::class, 'finish'])->name('small_order.finish');
     Route::get('/finished_small_orders', [SmallOrderController::class, 'finishIndex'])->name('finished_small_order.index');
     Route::delete('/small_order/{small_order}', [SmallOrderController::class, 'delete'])->name('small_order.delete');
 
     Route::get('/full_orders', [FullOrderController::class, 'index'])->name('full_order.index');
     Route::get('/full_order/{full_order}', [FullOrderController::class, 'show'])->name('full_order.show');
-    Route::patch('/finish/{full_order}', [FullOrderController::class, 'finish'])->name('full_order.finish');
+    Route::patch('/finish/full_order/{full_order}', [FullOrderController::class, 'finish'])->name('full_order.finish');
     Route::get('/finished_full_orders', [FullOrderController::class, 'finishIndex'])->name('finished_full_order.index');
     Route::delete('/full_order/{full_order}', [FullOrderController::class, 'delete'])->name('full_order.delete');
 

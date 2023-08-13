@@ -46,13 +46,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            t_onReady(function () {
-                t_onFuncLoad('t829_init', function () {
-                    t829_init('279567382');
-                });
-            });
-        </script>
+
     </div>
 
 @endsection

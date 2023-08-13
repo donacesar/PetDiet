@@ -19,8 +19,8 @@ class TelegramBotFactory extends Factory
     public function definition(): array
     {
         return [
-            'token' => '5933987272:AAEn1IIt3JIgXIXlaHJM-a7tA3E7FOd6_Zc',
-            'chat_id' => '-1001730451030',
+            'token' => '',
+            'chat_id' => '',
         ];
     }
 }

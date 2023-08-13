@@ -22,8 +22,8 @@
                     <th>Email</th>
                     <th>Связь</th>
                     <th>Услуга</th>
-                    <th>Завершено</th>
-                    <th>Удалить</th>
+                    <th class="al-center">Завершено</th>
+                    <th class="al-center">Удалить</th>
                 </tr>
                 </thead>
                 <tbody>
